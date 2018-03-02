@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Jackson's Design and Creative Projects
+title: HammondDesign
 email: jbhammon@umich.edu
 description: > # this means to ignore newlines until "baseurl:"
   Hi! I'm Jackson Hammond, Healthcare IT Professional with a passion for
@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I'm spending my spare time on. I hope you enjoy!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: I don't actually have Twitter :/
+twitter_username: None!
 github_username:  jbhammon
 
 # Build settings
