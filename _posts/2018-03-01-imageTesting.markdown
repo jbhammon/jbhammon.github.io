@@ -11,7 +11,7 @@ repo, and these pictures will move over there. For now they're going here!
 CAN'T FIGURE OUT THE IMAGES YET UGHHHH
 
 Initial Dashboard Sketch
-![](/_includes/Initial-dashboard.jpg?raw=true)
+![First alt text]({{ "/assets/Initial-Wireframe.jpg" | absolute_url }})
 
 My First Wireframe
-![](/_includes/First-Wireframe.jpg?raw=true)
+![Second alt text]({{ "/assets/Dashboard-Clicks.jpg" | absolute_url }})
