@@ -9,13 +9,7 @@ designing. I expect in the coming weeks this will turn into its own github
 repo, and these pictures will move over there. For now they're going here!
 
 Initial Dashboard Sketch
-Local Test
-![First local text]({{ "/assets/Initial-Wireframe.jpg" | absolute_url }})
-Live Test
 ![First live text]({{ "https://github.com/jbhammon/jbhammon.github.io/raw/master/assets/Initial-Wireframe.jpg" }})
 
 My First Wireframe
-Local Test
-![Second local text]({{ "/assets/Dashboard-Clicks.jpg" | absolute_url }})
-Live Test
 ![Second live text]({{ "https://github.com/jbhammon/jbhammon.github.io/raw/master/assets/Dashboard-Clicks.jpg" }})
