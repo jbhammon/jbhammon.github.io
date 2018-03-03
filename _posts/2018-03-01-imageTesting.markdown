@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How does the '_input' directory work?"
+title:  "How does posting images here work?"
 date:   2018-03-01 22:23:00 +0000
 categories: jekyll update
 ---
