@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Bootstrap and Mock Ups"
+date:   2018-03-15 21:23:00 +0000
+categories: jekyll update
+---
+
+I wanted to post a quick update of what I'm planning to work on next here!
+
+First, I created a webpage for my old "Pokemon in Python" project, and linked to
+it under the Projects section. I'm going to use that to practice building stuff
+with the Boostrap framework I learned about on Codecademy.
+
+Next, I'm working on finding a good tool to start creating the mock ups I sketched
+up in my previous post. I need to create a new page to post everything I'll be
+creating for that, and then I'll be posting iterations of my designs there. 
