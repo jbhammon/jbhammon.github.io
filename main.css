@@ -2,6 +2,16 @@
   font-family:Raleway
 }
 
+.navbar a {
+  color: #F23C50;
+  font-weight:bold;
+  font-size:18px
+}
+
+.navbar-brand {
+  font-size:22px
+}
+
 #mainJumbotron {
   background-color:#FFC205
 }
