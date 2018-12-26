@@ -2,34 +2,53 @@
   font-family:Raleway
 }
 
-#backdrop {
-  background-color:#0336FF
+.caption {
+  text-align:center;
 }
 
 #mainJumbotron {
-  background-color:#0336FF
+  background-color:#673AB7;
+  margin-bottom: 0;
 }
 
-#mainJumbotron h3 {
+h3 {
   font-family:Rubik, sans-serif;
   font-weight: 300;
-  color:#FFDE03;
+  color:#FFFFFF;
   font-size: 60px;
   letter-spacing: 3px;
 }
 
 .navbar.fixed-top {
-  background-color:#0336FF
+  background-color:#320B86
 }
 
 .navbar-brand {
   font-family:Rubik, sans-serif;
-  color:#FFDE03;
+  color:#FFFFFF;
   font-size: 21px;
+  letter-spacing: 1px;
 }
 
 #homeNavLinks a {
-  font-family: Raleway, sans-serif;
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
   color: #FFFFFF;
   font-size: 18px;
+}
+
+.project-name {
+  font-family: Raleway, sans-serif;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.project-type {
+  font-family: Raleway, sans-serif;
+  color: #320B86;
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
