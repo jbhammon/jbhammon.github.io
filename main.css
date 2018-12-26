@@ -2,16 +2,25 @@
   font-family:Raleway
 }
 
-.navbar a {
-  color: #F23C50;
-  font-weight:bold;
-  font-size:18px
+#mainJumbotron {
+  background-color:#0336FF
+}
+
+#mainJumbotron h3 {
+  font-family:Rubik, sans-serif;
+  font-weight: 300;
+  color:#FFDE03;
+  font-size: 60px;
 }
 
 .navbar-brand {
-  font-size:22px
+  font-family:Rubik, sans-serif;
+  color:#FFDE03;
+  font-size: 21px;
 }
 
-#mainJumbotron {
-  background-color:#FFC205
+#homeNavLinks a {
+  font-family: Raleway, sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
 }
