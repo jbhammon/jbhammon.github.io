@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel = "stylesheet" type = "text/css" href = "../main.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
+
+    <title>Jackson Hammond</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class = "container">
+        <a class="navbar-brand" href="../index.html">Jackson Hammond</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav ml-auto" id="homeNavLinks">
+            <li class="nav-item">
+              <a class="nav-link" href="http://jbhammon.github.io">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://jbhammon.github.io/About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://jbhammon.github.io/assets/Jackson Hammond - Resume.pdf">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron" id="mainJumbotron">
+      <div class = "container">
+        <div class = "row">
+          <h3>Exercise Visualizations</h3>
+        </div>
+        <div class = "row">
+          <p style="color:#FFFFFF">An individual project to practice some basic data visualization techniques.<br><br>
+          <b>Role:</b> Data Visualization Analyst<br>
+          <b>Tools:</b> R, RStudio</p>
+        </div>
+      </div>
+    </div>
+
+    <!---Actual content about the project --->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>The Visualizations</h4>
+          <p>I've been using the same app to track my strength training workouts for almost two years, but I realized it lets me export my data to a .csv file! I thought I'd try using R to visualize some trends in my workouts, and to help keep me motivated and pushing for progress each month.<br><br>
+          Check out the code <a href="https://github.com/jbhammon/Workout-Visualizations">here</a> on Github.<br><br>
+          I just started a new benching routine, so I thought that data would be a good place to start practicing with the ggplot() function. It's a three day per week routine, and I do fewer reps with higher weight as the week goes on. First it's sets at 70% of my "one-rep max" on Monday, then 75% on Wednesday, and 80% on Fridays.
+          </p>
+          <img src="../assets/Exercise Visualizations/Benching Line Graphs.png" style="width:100%; height:auto">
+          <p>
+            Right now it's hard to tell if there is an upward trend with all the plotted lines. Next up I'll examine plotting them all separately and including some markers for where I bumped my "one-rep max" to help make sense of all the dips in this plot.<br><br>
+            I'm also making some Sankey diagrams to visualize how much weight I'm lifting with each area of my body. Here's the progress I've made so far:
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
