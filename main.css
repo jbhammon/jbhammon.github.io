@@ -13,11 +13,11 @@
 }
 
 h1 {
-
+  font-family:Rubik, sans-serif;
 }
 
 h2 {
-
+  font-family:Rubik, sans-serif;
 }
 
 h3 {
@@ -28,11 +28,11 @@ h3 {
 }
 
 h4 {
-
+  font-family:Rubik, sans-serif;
 }
 
 h5 {
-
+  font-family:Rubik, sans-serif;
 }
 
 h6 {
@@ -70,7 +70,7 @@ h6 {
   font-family: Raleway, sans-serif;
   color: #313131;
   font-size: 21px;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 0;
 }
 
@@ -78,5 +78,5 @@ h6 {
   font-family: Raleway, sans-serif;
   color: #673AB7;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
 }
