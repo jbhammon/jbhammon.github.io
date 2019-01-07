@@ -41,7 +41,7 @@ h5 {
 }
 
 h6 {
-
+  font-family:Rubik, sans-serif;
 }
 
 .navbar.fixed-top {
@@ -84,4 +84,10 @@ h6 {
   color: #673AB7;
   font-size: 18px;
   font-weight: 500;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
