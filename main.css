@@ -12,6 +12,11 @@
   height:85vh;
 }
 
+.jumbotron.project-jumbotron {
+  color:#313131;
+  background-color:#FFFFFF;
+}
+
 h1 {
   font-family:Rubik, sans-serif;
 }
