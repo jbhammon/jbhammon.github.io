@@ -91,3 +91,27 @@ footer {
   margin-bottom: 50px;
   text-align: center;
 }
+
+.fa {
+  padding: 10px;
+  margin: 5px 2px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: grey;
+  color: #FFFFFF;
+}
+
+.fa:hover {
+    background: #673AB7;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-email {
+  color:grey;
+}
+.footer-email:hover {
+  color: #673AB7;
+  text-decoration: none;
+}
