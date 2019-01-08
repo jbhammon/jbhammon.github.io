@@ -112,6 +112,10 @@ footer {
   color:grey;
 }
 .footer-email:hover {
-  color: #673AB7;
+  color:#673AB7;
   text-decoration: none;
+}
+
+.footer-copyright {
+  color:grey;
 }
