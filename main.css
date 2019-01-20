@@ -142,6 +142,11 @@ h6 {
   padding: 20px;
 }
 
+.project-section-header {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
 .project-section-header:after {
   content:' ';
   display:block;
