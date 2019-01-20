@@ -118,6 +118,14 @@ h6 {
   margin-bottom: 15vh;
 }
 
+.project-section-header:after {
+  content:' ';
+  display:block;
+  border:3px solid #673AB7;
+  width: 60px;
+  margin-top: 2px;
+}
+
 footer {
   margin-top: 50px;
   margin-bottom: 50px;
