@@ -15,7 +15,7 @@ a:hover {
 .project-jumbotron {
   color:#313131;
   background-color:#FFFFFF;
-  height: 70vh;
+  height: 50vh;
 }
 
 .text-highlight {
@@ -49,8 +49,14 @@ h6 {
   font-family:'Sarabun', sans-serif;
 }
 
-.navbar.fixed-top {
-  background-color:#FFFFFF
+.navbar {
+  background-color:white;
+}
+
+.my-sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 .navbar-brand {
@@ -116,6 +122,24 @@ h6 {
 
 .project-page-card {
   margin-bottom: 15vh;
+}
+
+.project-section-navigation {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.sticky-project-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.project-section-navigation-cell {
+  padding: 20px;
 }
 
 .project-section-header:after {
