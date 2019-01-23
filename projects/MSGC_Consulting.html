@@ -22,7 +22,7 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md my-sticky-nav">
       <div class = "container">
         <a class="navbar-brand" href="../index.html">Jackson Hammond</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,25 +45,38 @@
     </nav>
 
     <main role="main">
-    <div class="jumbotron project-jumbotron">
-      <div class = "container">
-        <div class = "row">
-          <h3>Consulting with the MSGC</h3>
-        </div>
-        <div class = "row">
-          <p>A group project focused on user research and qualitative data analysis.<br><br>
-          <b>Role:</b> Customer Liaison, Experience Researcher<br>
-          <b>Tools:</b> Contextual Inquiry</p>
+
+      <div class="jumbotron project-jumbotron d-flex align-items-center">
+        <div class = "container">
+          <div class = "row d-flex justify-content-center">
+            <h3>Consulting with the MSGC</h3>
+          </div>
+          <div class = "row d-flex justify-content-center text-center">
+            <p>A group project focused on user research and qualitative data analysis.</p>
+          </div>
+          <div class = "row d-flex justify-content-center text-center text-highlight">
+            <p><b>Role:</b> Experience Researcher, Customer Liaison<br>
+            <b>Tools:</b> Contextual Inquiry</p>
+          </div>
         </div>
       </div>
-    </div>
 
     <!---Actual content about the project --->
+    <div class="sticky-project-nav">
+      <table class="project-section-navigation">
+        <tr>
+          <td class="project-section-navigation-cell"><a href="#researchMethods">RESEARCH METHODS </a></td>
+          <td class="project-section-navigation-cell"><a href="#analysis">ANALYSIS</a></td>
+          <td class="project-section-navigation-cell"><a href="#conclusions">CONCLUSIONS</a></td>
+        </tr>
+      </table>
+    </div>
+
     <div class="container">
 
       <div class="row">
         <div class="col-sm-12">
-          <h4>Our Team's Approach</h4>
+          <h4 class="project-section-header" id="researchMethods">RESEARCH METHODS</h4>
         </div>
       </div>
       <div class="project-page-card">
@@ -82,7 +95,7 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <h4>Our Analysis</h4>
+          <h4 class="project-section-header" id="analysis">ANALYSIS</h4>
         </div>
       </div>
       <div class="project-page-card">
@@ -114,7 +127,7 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <h4>Conclusions</h4>
+          <h4 class="project-section-header" id="conclusions">CONCLUSIONS</h4>
         </div>
       </div>
       <div class="project-page-card">
