@@ -13,8 +13,45 @@ a {
 
 #mainJumbotron {
   background-color:white;
-  height:85vh;
+  height:70vh;
 }
+
+#heroTextFirst {
+  font-size: 72px;
+  color: #D3D3D3;
+  position: relative;
+  opacity: 0;
+  margin-left: 5%;
+}
+
+#heroTextSecond {
+  font-size: 44px;
+  position: relative;
+  opacity: 0;
+  margin-left: 10%;
+}
+
+#heroTextThird {
+  font-size: 44px;
+  margin-top: 5px;
+  position: relative;
+  opacity: 0;
+  margin-left: 10%;
+}
+
+.test {
+  position: relative;
+}
+
+#heroUnderline {
+  position: absolute;
+  background: #673AB7;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+}
+
 
 .project-jumbotron {
   color:#313131;
@@ -23,7 +60,7 @@ a {
 }
 
 .text-highlight {
-  #color: #673AB7;
+  color: #673AB7;
 }
 
 h1 {
