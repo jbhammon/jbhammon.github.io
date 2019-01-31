@@ -39,19 +39,12 @@ a {
   margin-left: 10%;
 }
 
-.test {
-  position: relative;
+.underline--magical {
+  background-image: linear-gradient(to right, #673AB7 0%, #9077FF 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 93%;
 }
-
-#heroUnderline {
-  position: absolute;
-  background: #673AB7;
-  left: 0;
-  bottom: 0;
-  height: 5px;
-  width: 0%;
-}
-
 
 .project-jumbotron {
   color:#313131;
