@@ -18,7 +18,7 @@ a {
 
 #heroTextFirst {
   font-size: 72px;
-  color: #D3D3D3;
+  color: #BDBDBD;
   position: relative;
   opacity: 0;
   margin-left: 5%;
@@ -110,17 +110,14 @@ h6 {
 .navbar-custom .navbar-nav .nav-link {
   font-size:16px;
   letter-spacing:2px;
-  color:#313131;
+  color:#7D7D7D;
   font-weight:500;
   font-family: 'Sarabun', sans-serif;
 }
 
-.nav-link.current-link {
-  font-size:16px;
-  letter-spacing:2px;
-  color:#673AB7;
-  font-weight:500;
-  font-family: 'Sarabun', sans-serif;
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #673AB7;
 }
 
 .project-card {
@@ -134,7 +131,6 @@ h6 {
 }
 
 .project-card:hover {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   opacity: 0.7;
 }
 
