@@ -85,6 +85,7 @@ h6 {
 
 .navbar-custom {
   background-color:white;
+  z-index: 1;
 }
 
 .my-sticky-nav {
@@ -164,7 +165,7 @@ h6 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 
