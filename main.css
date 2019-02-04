@@ -39,6 +39,8 @@ a {
   margin-left: 15%;
 }
 
+/* Adapted from this CodePen: https://codepen.io/Wking/pen/BdmpVx */
+/* Which itself was Adapted from Will King https://github.com/wking-io */
 .underline--magical {
   background-image: linear-gradient(to right, #673AB7 0%, #9077FF 100%);
   background-repeat: no-repeat;
