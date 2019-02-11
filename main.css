@@ -7,7 +7,7 @@ a {
 }
 
 .container {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color:#313131;
 }
 
@@ -59,30 +59,30 @@ a {
 }
 
 h1 {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
 }
 
 h2 {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
 }
 
 h3 {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   font-weight: 300;
   font-size: 60px;
   letter-spacing: 2px;
 }
 
 h4 {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
 }
 
 h5 {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
 }
 
 h6 {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
 }
 
 .navbar-custom {
@@ -98,7 +98,7 @@ h6 {
 }
 
 .navbar-custom .navbar-brand {
-  font-family:'Sarabun', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   color:#313131;
   font-size: 21px;
   letter-spacing: 1px;
@@ -109,7 +109,7 @@ h6 {
   letter-spacing:2px;
   color:#7D7D7D;
   font-weight:500;
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-custom .nav-item.active .nav-link,
@@ -139,7 +139,7 @@ h6 {
 }
 
 .project-name {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #313131;
   font-size: 21px;
   font-weight: 300;
@@ -147,7 +147,7 @@ h6 {
 }
 
 .project-type {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #673AB7;
   font-size: 18px;
   font-weight: 500;
