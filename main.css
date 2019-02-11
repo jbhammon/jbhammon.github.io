@@ -8,6 +8,7 @@ a {
 
 .container {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color:#313131;
 }
 
@@ -59,30 +60,30 @@ a {
 }
 
 h1 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h2 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h3 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 300;
   font-size: 60px;
   letter-spacing: 2px;
 }
 
 h4 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h5 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h6 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .navbar-custom {
@@ -98,7 +99,7 @@ h6 {
 }
 
 .navbar-custom .navbar-brand {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto Slab', serif;
   color:#313131;
   font-size: 21px;
   letter-spacing: 1px;
@@ -170,6 +171,7 @@ h6 {
   top: 0;
   z-index: 2;
   background-color: white;
+  font-family: 'Roboto Slab', serif;
 }
 
 .project-section-navigation-cell {
