@@ -6,6 +6,10 @@ a {
   color: #673AB7;
 }
 
+p {
+  line-height: 1.6
+}
+
 .container {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -75,15 +79,15 @@ h3 {
 }
 
 h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h5 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-custom {
@@ -172,6 +176,7 @@ h6 {
   z-index: 2;
   background-color: white;
   font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 .project-section-navigation-cell {
