@@ -88,6 +88,7 @@ h5 {
 
 h6 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .navbar-custom {
@@ -271,4 +272,6 @@ footer {
 
 .footer-copyright {
   color:grey;
+  font-weight: 300;
+  color: #313131;
 }
