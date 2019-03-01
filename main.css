@@ -22,35 +22,39 @@ p {
 }
 
 #heroTextFirst {
-  font-size: 72px;
-  color: #BDBDBD;
+  /* font-size: 72px; */
+  /* color: #BDBDBD; */
   position: relative;
   opacity: 0;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 #heroTextSecond {
-  font-size: 44px;
+  /* font-size: 44px; */
   position: relative;
   opacity: 0;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 #heroTextThird {
-  font-size: 44px;
+  /* font-size: 44px; */
   margin-top: 5px;
   position: relative;
   opacity: 0;
-  margin-left: 15%;
+  /* margin-left: 5%; */
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Adapted from this CodePen: https://codepen.io/Wking/pen/BdmpVx */
 /* Which itself was Adapted from Will King https://github.com/wking-io */
 .underline--magical {
-  background-image: linear-gradient(to right, #673AB7 0%, #9077FF 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.1em;
-  background-position: 0 93%;
+  border-left: 5px solid #673AB7;
+  padding: 10px;
+}
+
+.underline--magical {
+  border-left: 5px solid #673AB7;
+  padding: 15px;
 }
 
 .project-jumbotron {
@@ -73,9 +77,9 @@ h2 {
 
 h3 {
   font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+  /* font-weight: 300;
   font-size: 60px;
-  letter-spacing: 2px;
+  letter-spacing: 2px; */
 }
 
 h4 {
