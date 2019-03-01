@@ -26,14 +26,14 @@ p {
   /* color: #BDBDBD; */
   position: relative;
   opacity: 0;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 #heroTextSecond {
   /* font-size: 44px; */
   position: relative;
   opacity: 0;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 #heroTextThird {
@@ -41,7 +41,7 @@ p {
   margin-top: 5px;
   position: relative;
   opacity: 0;
-  margin-left: 5%;
+  /* margin-left: 5%; */
   font-family: 'Roboto Slab', serif;
 }
 
