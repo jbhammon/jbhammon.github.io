@@ -42,7 +42,7 @@ p {
   position: relative;
   opacity: 0;
   /* margin-left: 5%; */
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Adapted from this CodePen: https://codepen.io/Wking/pen/BdmpVx */
@@ -68,15 +68,15 @@ p {
 }
 
 h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   /* font-weight: 300;
   font-size: 60px;
   letter-spacing: 2px; */
@@ -108,7 +108,7 @@ h6 {
 }
 
 .navbar-custom .navbar-brand {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   color:#313131;
   font-size: 21px;
   letter-spacing: 1px;
@@ -180,7 +180,7 @@ h6 {
   top: 0;
   z-index: 2;
   background-color: white;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
