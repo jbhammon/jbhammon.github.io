@@ -70,6 +70,8 @@ function onMouseMove(e) {
 function mobileDraw(e) {
   console.log("two")
   e.preventDefault();
+  console.log(window.innerHeight);
+  console.log(window.innerWidth);
 
   context.beginPath();
   context.rect(e.touches[0].clientX-22, e.touches[0].clientY-22, 30, 30);
@@ -81,6 +83,6 @@ function screenChange(e) {
   clearCanvas(e);
   console.log(window.innerHeight);
   console.log(window.innerWidth);
-  var height = canvas.width = window.innerHeight * 0.8;
-  var width = canvas.height = window.innerWidth * 0.8;
+  canvas.width = window.innerHeight * 0.8;
+  canvas.height = window.innerWidth * 0.8;
 }
