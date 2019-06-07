@@ -22,7 +22,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <link rel = "stylesheet" type = "text/css" href = "main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +39,9 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarUniq" aria-controls="navbarUniq" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Jackson Hammond</a>
+        <a class="navbar-brand" aria-label="My Logo" href="index.html">
+          <img src="assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
+        </a>
 
         <div id="navbarUniq" class="collapse navbar-collapse">
           <ul class="nav navbar-nav ml-auto" >
@@ -49,7 +52,7 @@
               <a class="nav-link" href="About.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="assets/Jackson Hammond - Resume.pdf">RESUME</a>
+              <a class="nav-link" href="assets/Jackson_Hammond_Resume.pdf">RESUME</a>
             </li>
           </ul>
         </div>
@@ -67,13 +70,9 @@
 
             <p>In my free time I like to get outside and stay active, read, cook, brew coffee, and practice drumset.</p>
 
-            <!--- Goodreads Widget --->
-              <span style="color: #382110">Check out what I've been reading lately here! </span><a href="https://www.goodreads.com/review/list/68005944?shelf=read" title="Jackson's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)", rel="nofollow"><img border="0" alt="Jackson's book recommendations, liked quotes, book clubs, book trivia, book lists (read shelf)" src="https://www.goodreads.com/images/badge/badge1.jpg"></a>
-            <!--- --->
-
           </div>
           <div class = "col-sm-6">
-            <img src = "assets/Picture of me.jpg" style = "width:80%">
+            <img src = "assets/Picture_of_me.jpg" style = "width:80%" alt="Portrait of myself">
           </div>
         </div>
       </div>
@@ -84,9 +83,9 @@
         <h6>Feel free to reach out if you want to connect or just say hi!</h6>
         <a class="footer-email" href="mailto:jbhammon@umich.edu">jbhammon@umich.edu</a>
         <div class="social-links">
-          <a href="https://github.com/jbhammon" target="_blank" class="fa fa-github"></a>
-          <a href="https://medium.com/@malts18" target="_blank" class="fa fa-medium"></a>
-          <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://github.com/jbhammon" target="_blank" class="fa fa-github" aria-label="My Github account"></a>
+          <a href="https://medium.com/@malts18" target="_blank" class="fa fa-medium" aria-label="My Medium account"></a>
+          <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target="_blank" class="fa fa-linkedin" aria-label="My LinkedIn account"></a>
         </div>
         <small class="footer-copyright">Pulled up with Bootstrap 4 &#169; 2019 Jackson Hammond</small>
       </div>
