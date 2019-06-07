@@ -81,4 +81,6 @@ function screenChange(e) {
   clearCanvas(e);
   console.log(window.innerHeight);
   console.log(window.innerWidth);
+  var height = canvas.width = window.innerHeight * 0.8;
+  var width = canvas.height = window.innerWidth * 0.8;
 }
