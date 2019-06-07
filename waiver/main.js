@@ -61,7 +61,6 @@ function changeColor(e) {
 
 function onMouseMove(e) {
   if(penIsDown) {
-    console.log("one")
     context.beginPath();
     context.rect(e.clientX-22, e.clientY-22, 30, 30);
     context.fillStyle = penColor;
@@ -70,10 +69,7 @@ function onMouseMove(e) {
 }
 
 function mobileDraw(e) {
-  console.log("two")
   e.preventDefault();
-  console.log(window.innerHeight);
-  console.log(window.innerWidth);
 
   context.beginPath();
   context.rect(e.touches[0].clientX-22, e.touches[0].clientY-22, 30, 30);
@@ -83,8 +79,7 @@ function mobileDraw(e) {
 
 function screenChange(e) {
   clearCanvas(e);
-  console.log("We're about to set the new size, the height is:");
-  console.log($( window ).height());
+
   canvas.width = $( window ).height() * 0.8;
   canvas.height = $( window ).width() * 0.8;
 }
