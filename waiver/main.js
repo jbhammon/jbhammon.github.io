@@ -1,7 +1,9 @@
 var canvas = document.getElementsByTagName("canvas")[0];
 var context = canvas.getContext("2d");
-var height = canvas.height = window.innerHeight * 0.8;
-var width = canvas.width = window.innerWidth * 0.8;
+// var height = canvas.height = window.innerHeight * 0.8;
+// var width = canvas.width = window.innerWidth * 0.8;
+var height = canvas.height = $( window ).height() * 0.8;
+var width = canvas.width = $( window ).width() * 0.8;
 
 var penIsDown = true;
 var penColor = "#FF362E";
@@ -82,7 +84,7 @@ function mobileDraw(e) {
 function screenChange(e) {
   clearCanvas(e);
   console.log("We're about to set the new size, the height is:");
-  console.log(window.screen.availHeight);
-  canvas.height = window.screen.availHeight * 0.8;
-  canvas.width = window.screen.availWidth * 0.8;
+  console.log($( window ).height());
+  canvas.width = $( window ).height() * 0.8;
+  canvas.height = $( window ).width() * 0.8;
 }
