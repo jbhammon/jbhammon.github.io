@@ -45,18 +45,6 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Adapted from this CodePen: https://codepen.io/Wking/pen/BdmpVx */
-/* Which itself was Adapted from Will King https://github.com/wking-io */
-.underline--magical {
-  border-left: 5px solid #673AB7;
-  padding: 10px;
-}
-
-.underline--magical {
-  border-left: 5px solid #673AB7;
-  padding: 15px;
-}
-
 .project-jumbotron {
   color:#313131;
   background-color:#FFFFFF;
