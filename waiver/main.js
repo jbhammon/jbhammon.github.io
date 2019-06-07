@@ -81,8 +81,8 @@ function mobileDraw(e) {
 
 function screenChange(e) {
   clearCanvas(e);
-  console.log(window.innerHeight);
-  console.log(window.innerWidth);
-  canvas.height = window.innerHeight * 0.8;
-  canvas.width = window.innerWidth * 0.8;
+  console.log("We're about to set the new size, the height is:");
+  console.log(window.screen.availHeight);
+  canvas.height = window.screen.availHeight * 0.8;
+  canvas.width = window.screen.availWidth * 0.8;
 }
