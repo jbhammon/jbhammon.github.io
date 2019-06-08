@@ -43,7 +43,7 @@ function onPenPutDown(e) {
 function changeColor(e) {
   // Blue
   if(e.keyCode == 66) {
-    $('#penColor').val('#4536FF')
+    $('#penColor').val('#1617FF')
   }
   // Green
   else if (e.keyCode == 71) {
