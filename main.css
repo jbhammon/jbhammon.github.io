@@ -22,26 +22,19 @@ p {
 }
 
 #heroTextFirst {
-  /* font-size: 72px; */
-  /* color: #BDBDBD; */
   position: relative;
   opacity: 0;
-  /* margin-left: 5%; */
 }
 
 #heroTextSecond {
-  /* font-size: 44px; */
   position: relative;
   opacity: 0;
-  /* margin-left: 10%; */
 }
 
 #heroTextThird {
-  /* font-size: 44px; */
   margin-top: 5px;
   position: relative;
   opacity: 0;
-  /* margin-left: 5%; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -83,36 +76,63 @@ h6 {
   font-weight: 300;
 }
 
-.navbar-custom {
-  background-color:white;
-  z-index: 1;
+.myNavBar {
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
-/* TODO Remove this? */
-.my-sticky-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-}
-
-.navbar-custom .navbar-brand {
-  font-family: 'Roboto', sans-serif;
-  color:#313131;
-  font-size: 21px;
-  letter-spacing: 1px;
-}
-
-.navbar-custom .navbar-nav .nav-link {
+.myNavBar a {
+  float: left;
+  display: block;
+  color: #313131;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-size:16px;
   letter-spacing:2px;
-  color:#313131;
   font-weight:500;
-  font-family: 'Roboto', sans-serif;
 }
 
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #673AB7;
+.myNavBar a:not(:first-child) {
+	float: right;
+}
+
+.myNavBar a.active {
+  color: #673AB7;
+}
+
+.myNavBar a:hover {
+  color: #673AB7;
+}
+
+.myNavBar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .myNavBar a:not(:first-child) {
+  	display: none;
+   }
+  .myNavBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myNavBar.responsive {
+  	position: relative;
+  }
+  .myNavBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .myNavBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .project-card {
@@ -128,8 +148,6 @@ h6 {
 .project-card:hover {
   opacity: 0.7;
 }
-
-
 
 .caption {
   text-align:center;
@@ -264,6 +282,7 @@ footer {
 .footer-email {
   color:#313131;
 }
+
 .footer-email:hover {
   color:#673AB7;
   text-decoration: none;
