@@ -43,37 +43,45 @@ function onPenPutDown(e) {
 function changeColor(e) {
   // Blue
   if(e.keyCode == 66) {
-    penColor = "#4536FF";
+    $('#penColor').val('#4536FF')
   }
   // Green
   else if (e.keyCode == 71) {
-    penColor = "#42FF43";
+    $('#penColor').val('#42FF43')
   }
   // Red
   else if (e.keyCode == 82) {
-    penColor = "#FF362E";
+    $('#penColor').val('#ff0000')
   }
   // Yellow
   else if (e.keyCode == 89) {
-    penColor = "#FFFD4D";
+    $('#penColor').val('#FFFD4D')
   }
 }
 
+// Using an offset of 22 pixels, because that makes the cursor
+// seem "in the middle" of the square being drawn
 function onMouseMove(e) {
   if(penIsDown) {
     context.beginPath();
     context.rect(e.clientX-22, e.clientY-22, 30, 30);
-    context.fillStyle = penColor;
+    // Grabbing the color from the color picker
+    inputColor = document.getElementById("penColor");
+    context.fillStyle = inputColor.value;
     context.fill();
   }
 }
 
+// Using an offset of 22 pixels, because that makes the cursor
+// seem "in the middle" of the square being drawn
 function mobileDraw(e) {
   e.preventDefault();
 
   context.beginPath();
   context.rect(e.touches[0].clientX-22, e.touches[0].clientY-22, 30, 30);
-  context.fillStyle = penColor;
+  // Grabbing the color from the color picker
+  inputColor = document.getElementById("penColor");
+  context.fillStyle = inputColor.value;
   context.fill();
 }
 
