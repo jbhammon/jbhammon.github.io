@@ -48,6 +48,13 @@ p {
   color: #673AB7;
 }
 
+.hero-text {
+  color: #313131;
+}
+.hero-text:hover {
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
 }
@@ -74,6 +81,28 @@ h5 {
 h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+.image-width-eighty {
+  width:80%;
+}
+
+.image-width-hundo {
+  width:100%;
+}
+
+.copy-emphasis {
+  color: #673AB7;
+  font-weight: 500;
+}
+
+.div-buffer-help {
+  position: relative;
+  height: 57.5px
+}
+
+.about-me-margin {
+  margin-top: 100px;
 }
 
 .myNavBar {
@@ -107,6 +136,10 @@ h6 {
 
 .myNavBar .icon {
   display: none;
+}
+
+.fa.fa-bars {
+  color: #313131;
 }
 
 @media screen and (max-width: 600px) {
