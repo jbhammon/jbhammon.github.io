@@ -85,9 +85,6 @@ function onMouseMove(e) {
   if(penIsDown) {
     context.beginPath();
     context.rect(e.clientX-22, e.clientY-22, 30, 30);
-    // // Grabbing the color from the color picker
-    // inputColor = document.getElementById("penColor");
-    // context.fillStyle = inputColor.value;
     context.fillStyle = penColor;
     context.fill();
   }
@@ -100,15 +97,12 @@ function mobileDraw(e) {
 
   context.beginPath();
   context.rect(e.touches[0].clientX-22, e.touches[0].clientY-22, 30, 30);
-  // Grabbing the color from the color picker
-  inputColor = document.getElementById("penColor");
-  context.fillStyle = inputColor.value;
+  context.fillStyle = penColor;
   context.fill();
 }
 
 function screenChange(e) {
   clearCanvas(e);
-
   canvas.width = $( window ).height() * 0.8;
   canvas.height = $( window ).width() * 0.8;
 }
