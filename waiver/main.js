@@ -27,6 +27,11 @@ document.addEventListener("mousemove", onMouseMove, false);
 document.addEventListener("touchstart", mobileDraw, { passive: false });
 
 // Listen for orientation changes, clear the canvas, and resize canvase
+
+// NOTE
+// This event listener seems to work on: Chrome desktop when toggled to mobile view,
+// Chrome for Android, Firefox for Android, but NOT Firefox desktop when toggled
+// to mobile view
 window.addEventListener("orientationchange", screenChange, false);
 
 function colorPicked(e) {
