@@ -84,7 +84,10 @@ function changeColor(e) {
   }
 }
 
-// Using an offset of 22 pixels, because that makes the cursor
+// Initially tried using context.rect(e.clientX-15, e.clientY-15, 30, 30);
+// to draw the squares, but the square didn't seem centered under the cursor
+
+// Instead, I'm using an offset of 22 pixels, because that makes the cursor
 // seem "in the middle" of the square being drawn
 function onMouseMove(e) {
   if(penIsDown) {
@@ -95,8 +98,8 @@ function onMouseMove(e) {
   }
 }
 
-// Using an offset of 22 pixels, because that makes the cursor
-// seem "in the middle" of the square being drawn
+// Similar to code above, using an offset of 22 pixels to make the squares
+// appear centered under the user's touch
 function mobileDraw(e) {
   e.preventDefault();
 
