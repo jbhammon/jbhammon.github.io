@@ -16,6 +16,8 @@ p {
   color:#313131;
 }
 
+/* Advanced selector 1
+Specificity: 100 */
 #mainJumbotron {
   background-color:white;
   height:70vh;
@@ -51,6 +53,9 @@ p {
 .hero-text {
   color: #313131;
 }
+
+/* Advanced selector 2
+Specificity: 11 */
 .hero-text:hover {
   text-decoration: none;
   color: #313131;
@@ -139,6 +144,8 @@ h6 {
   display: none;
 }
 
+/* Advanced selector 3
+Specificity: 20 (?) */
 .fa.fa-bars {
   color: #313131;
 }
@@ -179,15 +186,21 @@ h6 {
   height:auto;
 }
 
+/* Advanced selector 4
+Specificity: 11 */
 .project-card:hover {
   opacity: 0.7;
 }
 
+/* Advanced selector 5
+Specificity: 20 */
 .project-card .caption {
   text-align:center;
   padding: 15px;
 }
 
+/* Advanced selector 6
+Specificity: 20 */
 .project-card .project-name {
   font-family: 'Roboto', sans-serif;
   color: #313131;
@@ -196,6 +209,8 @@ h6 {
   margin-bottom: 0;
 }
 
+/* Advanced selector 7
+Specificity: 20 */
 .project-card .project-type {
   font-family: 'Roboto', sans-serif;
   color: #673AB7;
@@ -240,6 +255,8 @@ h6 {
   margin-top: -70px;
 }
 
+/* Advanced selector 8
+Specificity: 11 */
 .project-section-header:after {
   content:' ';
   display:block;
@@ -307,6 +324,8 @@ footer {
   color: #FFFFFF;
 }
 
+/* Advanced selector 9
+Specificity: 11 */
 .fa:hover {
     background: #673AB7;
     color: #FFFFFF;
@@ -317,6 +336,8 @@ footer {
   color:#313131;
 }
 
+/* Advanced selector 10
+Specificity: 11 */
 .footer-email:hover {
   color:#673AB7;
   text-decoration: none;
