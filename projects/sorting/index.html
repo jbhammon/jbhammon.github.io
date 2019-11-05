@@ -1,0 +1,809 @@
+<!-- TODO
+* Tidy up gross code that I wrote to meet my deadline
+  * Clean up all the JS in this file and move it to their own files
+  * Find areas with repeated or duplicated code and do a DRY refactoring
+-->
+
+<html>
+  <head>
+    <title>SI 649 Individual Project - Jackson Hammond</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src='js/sorting.js'></script>
+    <script src='js/myScripts.js'></script>
+
+    <link rel="stylesheet" href="css/myStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Learn Sorting</h1>
+      <h2>Algorithm Investigation</h2>
+      <p>Choose an algorithm below to learn more about how it works, see its pseudo code, and watch it sort an array step by step.</p>
+      <p>Elements being compared are <span style="color: #7156FF;"><b>purple</b></span>, and elements being swapped are <span style="color: #34CC31;"><b>green</b></span>.</p>
+      <label for='#algo-select'>Algorithm</label>
+      <select class='form-control' id='algo-select' onchange='algoChange()'>
+        <option value='bubblesort'>Bubble sort</option>
+        <option value='selectionsort'>Selection sort</option>
+        <option value='insertionsort'>Insertion sort</option>
+        <option value='odd_even_sort'>Odd-even sort</option>
+        <option value='cocktail_sort'>Cocktail sort</option>
+        <option value='quicksort'>Quicksort</option>
+        <option value='heapsort'>Heapsort</option>
+        <option value='mergesort'>Merge sort</option>
+        <option value='introsort'>Introsort</option>
+      </select>
+      <div class="row">
+        <div class="column">
+          <div id='bubble-sort-copy' class='hidden'>
+            <h4>Explanation of Bubble Sort</h4>
+            <p>
+              Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code style=display:block;white-space:pre-wrap>
+procedure bubbleSort(A : list of sortable items )
+  n = length(A)
+  repeat
+    swapped = false
+    for i = 1 to n-1 inclusive do
+      /* if this pair is out of order */
+      if A[i-1] > A[i] then
+        /* swap them and remember something changed */
+        swap( A[i-1], A[i] )
+        swapped = true
+      end if
+    end for
+  until not swapped
+end procedure
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Bubble_sort target="_blank">Source</a></p>
+          </div>
+          <div id='selection-sort-copy' class='hidden'>
+            <h4>Explanation of Selection Sort</h4>
+            <p>
+              The algorithm divides the input list into two parts: the sublist of items already sorted, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right. Uniqueness of selection sort when compared to other sorting techniques: The time efficiency of selection sort is quadratic, so there exists a number of sorting techniques which have better time complexity than selection sort. Even then, considering the number of swaps made, the number of swaps will be n-1 both in worst as well as best case. That is, time efficiency of selection sort with respect to swaps is linear. This property distinguishes selection sort positively from many other sorting algorithms.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+procedure selection sort
+ list  : array of items
+ n     : size of list
+
+ for i = 1 to n - 1
+ /* set current element as minimum*/
+    min = i
+
+    /* check the element to be minimum */
+
+    for j = i+1 to n
+       if list[j] < list[min] then
+          min = j;
+       end if
+    end for
+
+    /* swap the minimum element with the current element*/
+    if indexMin != i  then
+       swap list[min] and list[i]
+    end if
+ end for
+
+end procedure
+          </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Selection_sort target="_blank">Explanation source</a> and <a href=https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm target="_blank">Pseudo code source</a></p>
+          </div>
+          <div id='insertion-sort-copy' class='hidden'>
+            <h4>Explanation of Insertion Sort</h4>
+            <p>
+              Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. However, insertion sort provides several advantages:
+              <ul>
+                <li>Simple implementation</li>
+                <li>Efficient for (quite) small data sets, more efficient in practice than most other simple quadratic algorithms such as selection sort or bubble sort</li>
+                <li>Adaptive, stable, and in-place</li>
+              </ul>
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+i ← 1
+while i < length(A)
+  j ← i
+  while j > 0 and A[j-1] > A[j]
+    swap A[j] and A[j-1]
+    j ← j - 1
+  end while
+  i ← i + 1
+end while
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Insertion_sort target="_blank">Source</a></p>
+          </div>
+          <div id='odd-even-sort-copy' class='hidden'>
+            <h4>Explanation of Odd-Even Sort</h4>
+            <p>
+              In computing, an odd–even sort is a relatively simple sorting algorithm, developed originally for use on parallel processors with local interconnections. It is a comparison sort related to bubble sort, with which it shares many characteristics. It functions by comparing all odd/even indexed pairs of adjacent elements in the list and, if a pair is in the wrong order (the first is larger than the second) the elements are switched. The next step repeats this for even/odd indexed pairs (of adjacent elements). Then it alternates between odd/even and even/odd steps until the list is sorted.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+function oddEvenSort(list) {
+  function swap(list, i, j) {
+    var temp = list[i];
+    list[i] = list[j];
+    list[j] = temp;
+  }
+
+  var sorted = false;
+  while (!sorted) {
+    sorted = true;
+    for (var i = 1; i < list.length - 1; i += 1) {
+      if(list[i] > list[i + 1]) {
+        swap(list, i, i + 1);
+        sorted = false;
+      }
+    }
+    for (var i = 0; i < list.length - 1; i += 1) {
+      if (list[i] > list[i + 1]) {
+        swap(list, i, i + 1);
+        sorted = false;
+      }
+    }
+  }
+}
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort target="_blank">Source</a></p>
+          </div>
+          <div id='cocktail-sort-copy' class='hidden'>
+            <h4>Explanation of Cocktail Sort</h4>
+            <p>
+              Cocktail shaker sort is a variation of bubble sort that is both a stable sorting algorithm and a comparison sort. The algorithm differs from a bubble sort in that it sorts in both directions on each pass through the list. This sorting algorithm is only marginally more difficult to implement than a bubble sort, and solves the problem of turtles in bubble sorts. It provides only marginal performance improvements, and does not improve asymptotic performance; like the bubble sort, it is not of practical interest (insertion sort is preferred for simple sorts), though it finds some use in education.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+procedure cocktailSort( A : list of sortable items ) defined as:
+  do
+    swapped := false
+    for each i in 0 to length( A ) - 2 do:
+      if A[ i ] > A[ i + 1 ] then
+        swap( A[ i ], A[ i + 1 ] )
+        swapped := true
+      end if
+    end for
+    if not swapped then
+      // we can exit the outer loop here if no swaps occurred.
+      break do-while loop
+    end if
+    swapped := false
+    for each i in length( A ) - 2 to 0 do:
+      if A[ i ] > A[ i + 1 ] then
+        swap( A[ i ], A[ i + 1 ] )
+        swapped := true
+      end if
+    end for
+  while swapped // if no elements have been swapped, then the list is sorted
+end procedure
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Cocktail_shaker_sort target="_blank">Source</a></p>
+          </div>
+          <div id='quicksort-sort-copy' class='hidden'>
+            <h4>Explanation of Quicksort</h4>
+            <p>
+              Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation is defined. Efficient implementations of Quicksort are not a stable sort, meaning that the relative order of equal sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional amounts of memory to perform the sorting. It is very similar to selection sort, except that it does not always choose worst-case partition. The pivot selection and partitioning steps can be done in several different ways; the choice of specific implementation schemes greatly affects the algorithm's performance.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+algorithm quicksort(A, lo, hi) is
+  if lo < hi then
+    p := partition(A, lo, hi)
+    quicksort(A, lo, p)
+    quicksort(A, p + 1, hi)
+
+algorithm partition(A, lo, hi) is
+  pivot := A[lo + (hi - lo) / 2]
+  i := lo - 1
+  j := hi + 1
+  loop forever
+    do
+      i := i + 1
+    while A[i] < pivot
+    do
+      j := j - 1
+    while A[j] > pivot
+    if i >= j then
+      return j
+    swap A[i] with A[j]
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Quicksort target="_blank">Source</a></p>
+          </div>
+          <div id='heapsort-sort-copy' class='hidden'>
+            <h4>Explanation of Heapsort</h4>
+            <p>
+              Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+procedure heapsort(a, count) is
+  input: an unordered array a of length count
+
+  // Build the heap in array a so that largest value is at the root
+  heapify(a, count)
+
+  /* The following loop maintains the invariants that a[0:end] is a
+  heap and every element beyond end is greater than everything
+  before it (so a[end:count] is in sorted order) */
+    end ← count - 1
+    while end > 0 do
+      // a[0] is the root and largest value.
+      // The swap moves it in front of the sorted elements.
+      swap(a[end], a[0])
+      (the heap size is reduced by one)
+      end ← end - 1
+      (the swap ruined the heap property, so restore it)
+      siftDown(a, 0, end)
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Heapsort target="_blank">Source</a></p>
+          </div>
+          <div id='merge-sort-copy' class='hidden'>
+            <h4>Explanation of Merge Sort</h4>
+            <p>
+              Conceptually, a merge sort works as follows:
+              <ul>
+                <li>Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).</li>
+                <li>Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.</li>
+              </ul>
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+procedure mergesort( var a as array )
+   if ( n == 1 ) return a
+
+   var l1 as array = a[0] ... a[n/2]
+   var l2 as array = a[n/2+1] ... a[n]
+
+   l1 = mergesort( l1 )
+   l2 = mergesort( l2 )
+
+   return merge( l1, l2 )
+end procedure
+
+procedure merge( var a as array, var b as array )
+
+   var c as array
+   while ( a and b have elements )
+      if ( a[0] > b[0] )
+         add b[0] to the end of c
+         remove b[0] from b
+      else
+         add a[0] to the end of c
+         remove a[0] from a
+      end if
+   end while
+
+   while ( a has elements )
+      add a[0] to the end of c
+      remove a[0] from a
+   end while
+
+   while ( b has elements )
+      add b[0] to the end of c
+      remove b[0] from b
+   end while
+
+   return c
+
+end procedure
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Merge_sort target="_blank">Explanation source</a> and <a href=https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm target="_blank">Pseudo code source</a></p>
+          </div>
+          <div id='intro-sort-copy' class='hidden'>
+            <h4>Explanation of Introsort</h4>
+            <p>
+              Introsort or introspective sort is a hybrid sorting algorithm that provides both fast average performance and (asymptotically) optimal worst-case performance. It begins with quicksort and switches to heapsort when the recursion depth exceeds a level based on (the logarithm of) the number of elements being sorted. This combines the good parts of both algorithms, with practical performance comparable to quicksort on typical data sets and worst-case O(n log n) runtime due to the heap sort. Since both algorithms it uses are comparison sorts, it is also a comparison sort.
+            </p>
+            <h4>Pseudo code</h4>
+            <pre><code>
+procedure sort(A : array):
+  let maxdepth = ⌊log(length(A))⌋ × 2
+  introsort(A, maxdepth)
+
+procedure introsort(A, maxdepth):
+  n ← length(A)
+  if n ≤ 1:
+    return  // base case
+  else if maxdepth = 0:
+    heapsort(A)
+  else:
+    // assume this function does pivot selection, p is the final position of the pivot
+    p ← partition(A)
+    introsort(A[0:p-1], maxdepth - 1)
+    introsort(A[p+1:n], maxdepth - 1)
+            </code></pre>
+            <p><a href=https://en.wikipedia.org/wiki/Introsort target="_blank">Source</a></p>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="algorithmInputs">
+            <div>
+              <label for='#array-size'>Array Size</label>
+              <select id='array-size'>
+                <option value='10'>10</option>
+                <option value='20'>20</option>
+                <option value='50'>50</option>
+              </select>
+            </div>
+            <div>
+              <label for='#init-select'>Initial array</label>
+              <select class='form-control' id='init-select'>
+                <option value='random'>Random</option>
+                <option value='sorted'>Sorted</option>
+                <option value='reversed'>Reversed</option>
+              </select>
+            </div>
+            <div id='pivot-select-div'>
+              <label for='#pivot-select'>Pivot choice</label>
+              <select class='form-control' id='pivot-select'>
+                <option value='random'>Random</option>
+                <option value='first'>First</option>
+                <option value='middle'>Middle</option>
+                <option value='last'>Last</option>
+                <option value='median3'>Median of 3</option>
+              </select>
+            </div>
+            <div>
+              <label for='#interval'>Interval (ms)</label>
+              <input id='interval' class='form-control' type='number' value="100"/>
+            </div>
+          </div>
+          <canvas id="myChart2"></canvas>
+          <button id="start-btn">
+              Sort
+          </button>
+          <button id="resetBtn">
+              Reset
+          </button>
+          <canvas id="main-line-chart" class="hidden"></canvas>
+        </div>
+      </div>
+
+      <h2>Algorithm Comparison</h2>
+      <p>Choose two algorithms below and click "Compare" to watch how their performance compares to one another. Once they're both completed click "Reset" to shuffle the arrays and start again.</p>
+      <div>
+        <button id='startRace'>Compare</button>
+        <button id='resetRace'>Reset</button>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="algorithmInputs">
+            <div>
+              <label for='#bottom-comparison-1'>Algorithm</label>
+              <select class='form-control' id='bottom-comparison-1'>
+                <option value='bubblesort'>Bubble sort</option>
+                <option value='selectionsort'>Selection sort</option>
+                <option value='insertionsort'>Insertion sort</option>
+                <option value='odd_even_sort'>Odd-even sort</option>
+                <option value='cocktail_sort'>Cocktail sort</option>
+                <option value='quicksort'>Quicksort</option>
+                <option value='heapsort'>Heapsort</option>
+                <option value='mergesort'>Merge sort</option>
+                <option value='introsort'>Introsort</option>
+              </select>
+            </div>
+            <div id='bottom-pivot-1-div'>
+              <label for='#bottom-pivot-1'>Pivot choice</label>
+              <select class='form-control' id='bottom-pivot-1'>
+                <option value='random'>Random</option>
+                <option value='first'>First</option>
+                <option value='middle'>Middle</option>
+                <option value='last'>Last</option>
+                <option value='median3'>Median of 3</option>
+              </select>
+            </div>
+          </div>
+          <canvas id="bottom-bar-1">/<canvas>
+        </div>
+        <div class="column">
+          <div class="algorithmInputs">
+            <div>
+              <label for='#bottom-comparison-2'>Algorithm</label>
+              <select class='form-control' id='bottom-comparison-2'>
+                <option value='bubblesort'>Bubble sort</option>
+                <option value='selectionsort'>Selection sort</option>
+                <option value='insertionsort'>Insertion sort</option>
+                <option value='odd_even_sort'>Odd-even sort</option>
+                <option value='cocktail_sort'>Cocktail sort</option>
+                <option value='quicksort'>Quicksort</option>
+                <option value='heapsort'>Heapsort</option>
+                <option value='mergesort'>Merge sort</option>
+                <option value='introsort'>Introsort</option>
+              </select>
+            </div>
+            <div id='bottom-pivot-2-div'>
+              <label for='#bottom-pivot-1'>Pivot choice</label>
+              <select class='form-control' id='bottom-pivot-2'>
+                <option value='random'>Random</option>
+                <option value='first'>First</option>
+                <option value='middle'>Middle</option>
+                <option value='last'>Last</option>
+                <option value='median3'>Median of 3</option>
+              </select>
+            </div>
+          </div>
+          <canvas id="bottom-bar-2"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div style="width:50%">
+          <canvas id="shared-line-chart"></canvas>
+        </div>
+      </div>
+      <h2>Sources and Citations</h2>
+      <p>All the sources I collected code and other information from are listed below for reference.</p>
+      <p>I borrowed much of javascript code that handles the actual sorting of the arrays from Justin Johnson. His "AnimatedArray" object and subsequent sorting code is what drives much of the background computation for this project. See citations below for more information.</p>
+      <ul>
+        <li>index.html. <i>sorting.js</i>, commit d8d7a1a30c00fde2456acc1063d5e22929378681, Justin Johnson, 2015. <i>GitHub</i>, https://github.com/jcjohnson/sorting.js/blob/master/index.html</li>
+        <li>sorting.js. <i>sorting.js</i>, commit d8d7a1a30c00fde2456acc1063d5e22929378681, Justin Johnson, 2015. <i>GitHub</i>, https://github.com/jcjohnson/sorting.js/blob/master/js/sorting.js</li>
+      </ul>
+      <p>Below is a formal listing of sources for all the sorting code explanations and pseudocode.</p>
+      <ul>
+        <li>"Bubble sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Bubble_sort. Accessed 2 November 2019. </li>
+        <li>"Selection sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Selection_sort. Accessed 2 November 2019. </li>
+        <li>"Data Structure and Algorithms Selection Sort." <i>TutorialsPoint</i>, https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm. Accessed 2 November 2019. </li>
+        <li>"Insertion sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Insertion_sort. Accessed 2 November 2019. </li>
+        <li>"Odd-even sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort. Accessed 2 November 2019. </li>
+        <li>"Cocktail shaker sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Cocktail_shaker_sort. Accessed 2 November 2019. </li>
+        <li>"Quicksort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Quicksort. Accessed 2 November 2019. </li>
+        <li>"Heapsort." <i>Wikipedia</i>, hthttps://en.wikipedia.org/wiki/Heapsort. Accessed 2 November 2019. </li>
+        <li>"Merge sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Merge_sort. Accessed 2 November 2019. </li>
+        <li>"Data Structures - Merge Sort Algorithm." <i>TutorialsPoint</i>, https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm. Accessed 2 November 2019. </li>
+        <li>"Introsort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Introsort. Accessed 2 November 2019. </li>
+      </ul>
+
+      <h3>Author Info</h3>
+      <p>Created and Designed by Jackson Hammond, SI 649 Individual Project Fall 2019.
+    </div>
+
+    <script>
+      $(function() {
+        var aa = null;
+
+        // Make the canvas fit the available space
+        var resize_canvas = function() {
+          $('#main-canvas').width($('#canvas-div').width());
+        }
+        resize_canvas();
+        $(window).resize(resize_canvas);
+
+        ////////////////////////
+        var ctx2 = document.getElementById("myChart2").getContext('2d');
+        let firstData = Array.from({length: 20}, () => Math.floor(Math.random() * 40));
+        var myChart = new Chart(ctx2, {
+          type: 'bar',
+          data: {
+            labels: firstData,
+            datasets: [{
+              label: 'Array Value',
+              data: firstData,
+              backgroundColor: '#A9A9A9',
+              borderColor: '#313131',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true,
+                  display: false,
+                },
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                },
+              }],
+              xAxes: [{
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                }
+              }]
+            },
+            animation: false,
+            legend: false,
+          }
+        });
+        ////////////////////////
+
+        ////////////////////////
+        var ctx3 = document.getElementById("main-line-chart").getContext('2d');
+        var mainLineChart = new Chart(ctx3, {
+          type: 'line',
+          data: {
+            labels: [0],
+            datasets: [
+              {
+                label: 'Number of Swaps',
+                borderColor: "rgba(63, 160, 255, 0.8)",
+                backgroundColor: "rgba(63, 160, 255, 0.2)",
+                steppedLine: true,
+                pointRadius: 1,
+                data: [0],
+              },
+            ]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Number of Swaps'
+                }
+              }],
+              xAxes: [{
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Algorithm Step Count'
+                }
+              }]
+            }
+          }
+        });
+        ////////////////////////
+
+        // Disable / enable the pivot select as needed
+        var update_pivot_select = function() {
+          var algo = $('#algo-select').val();
+          var pivot_algo = sorting.is_pivot_algo(algo);
+          $('#pivot-select').prop('disabled', !pivot_algo);
+          $('#pivot-select-div').toggleClass('hidden', !pivot_algo);
+        }
+        update_pivot_select();
+        $('#algo-select').change(update_pivot_select);
+
+        // Fisher-Yates shuffle algorithm
+        // Source I grabbed it from: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+        function shuffleArray(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+        }
+
+        let resetArray = function() {
+          if (aa !== null) aa.cancel();
+          mainLineChart.data.datasets[0].data = [0];
+          mainLineChart.data.labels = [0];
+          mainLineChart.update();
+          let nextSize = $('#array-size').val();
+          let nextInitCond = $('#init-select').val();
+          let nextData = [...Array(parseInt(nextSize)).keys()].map(x => ++x);
+
+          if (nextInitCond === 'random') {
+            shuffleArray(nextData);
+          } else if (nextInitCond === 'reversed') {
+            nextData = nextData.reverse();
+          }
+
+          myChart.data.datasets[0].data = nextData;
+          myChart.data.labels = nextData;
+          myChart.update();
+        }
+        resetArray();
+        $('#array-size').change(resetArray);
+        $('#init-select').change(resetArray);
+        $('#resetBtn').click(resetArray);
+
+        $('#start-btn').click(function() {
+          if (aa !== null) aa.cancel();
+          mainLineChart.data.datasets[0].data = [0];
+          mainLineChart.data.labels = [0];
+          mainLineChart.update();
+
+          var n = parseInt($('#array-size').val());
+          var interval = parseInt($('#interval').val());
+          var algo = $('#algo-select').val();
+          var pivot_type = $('#pivot-select').val();
+          var sort_fn = sorting.get_sort_fn(algo, pivot_type);
+
+          if (algo === 'bitonic_mergesort') {
+            // Round up to the nearest power of 2
+            var n2 = 1;
+            while (n2 < n) n2 *= 2;
+            $('#array-size').val(n2);
+            n = n2;
+          }
+
+          ary = myChart.data.datasets[0].data;
+          var init = $('#init-select').val();
+          if (init === 'sorted') {
+            ary.sort(function(a, b) { return a - b; });
+          } else if (init === 'reversed') {
+            ary.sort(function(a, b) {return b - a; });
+          }
+
+          var canvas = document.getElementById('main-canvas');
+
+
+          aa = new sorting.AnimatedArray(ary, myChart, interval, mainLineChart, mainLineChart.data.datasets[0]);
+          sort_fn(aa);
+        });
+      });
+    </script>
+    <script>
+      $(function() {
+
+        // let sharedData = Array.from({length: 20}, () => Math.floor(Math.random() * 40));
+
+        var ctx1 = document.getElementById("bottom-bar-1").getContext('2d');
+        let barData1 = Array.from({length: 20}, () => Math.floor(Math.random() * 40));
+        var barChart1 = new Chart(ctx1, {
+          type: 'bar',
+          data: {
+            labels: barData1,
+            datasets: [{
+              label: 'Array Value',
+              data: barData1,
+              backgroundColor: '#A9A9A9',
+              borderColor: '#313131',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true,
+                  display: false,
+                },
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                },
+              }],
+              xAxes: [{
+                gridLines: {
+                  color: "rgba(0, 0, 0, 0)",
+                }
+              }]
+            },
+            animation: false,
+            legend: false,
+          }
+        });
+
+      var ctx2 = document.getElementById("bottom-bar-2").getContext('2d');
+      let barData2 = Array.from({length: 20}, () => Math.floor(Math.random() * 40));
+      var barChart2 = new Chart(ctx2, {
+        type: 'bar',
+        data: {
+          labels: barData2,
+          datasets: [{
+            label: 'Array Value',
+            data: barData2,
+            backgroundColor: '#A9A9A9',
+            borderColor: '#313131',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                display: false,
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            }],
+            xAxes: [{
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              }
+            }]
+          },
+          animation: false,
+          legend: false,
+        }
+      });
+
+    var ctxLast = document.getElementById("shared-line-chart").getContext('2d');
+    var sharedLineChart = new Chart(ctxLast, {
+      type: 'line',
+      data: {
+        labels: [0],
+        datasets: [
+          {
+            label: 'Left Algorithm Swaps',
+            borderColor: "rgba(63, 160, 255, 0.8)",
+            backgroundColor: "rgba(63, 160, 255, 0.2)",
+            steppedLine: true,
+            pointRadius: 1,
+            data: [0],
+          },
+          {
+            label: 'Right Algorithm Swaps',
+            borderColor: "rgba(255, 125, 61, 0.8)",
+            backgroundColor: "rgba(255, 125, 61, 0.2)",
+            steppedLine: true,
+            pointRadius: 0,
+            data: [0],
+          },
+        ]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Number of Swaps'
+            }
+          }],
+          xAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: 'Algorithm Step Count',
+            }
+          }]
+        }
+      }
+    });
+
+    // Disable / enable the pivot select as needed
+    var update_pivot_select1 = function() {
+      var algo = $('#bottom-comparison-1').val();
+      var pivot_algo = sorting.is_pivot_algo(algo);
+      $('#bottom-pivot-1').prop('disabled', !pivot_algo);
+      $('#bottom-pivot-1-div').toggleClass('hidden', !pivot_algo);
+    }
+    update_pivot_select1();
+    $('#bottom-comparison-1').change(update_pivot_select1);
+
+    var update_pivot_select2 = function() {
+      var algo = $('#bottom-comparison-2').val();
+      var pivot_algo = sorting.is_pivot_algo(algo);
+      $('#bottom-pivot-2').prop('disabled', !pivot_algo);
+      $('#bottom-pivot-2-div').toggleClass('hidden', !pivot_algo);
+    }
+    update_pivot_select2();
+    $('#bottom-comparison-2').change(update_pivot_select2);
+
+    $('#resetRace').click(function() {
+
+      let newData = Array.from({length: 20}, () => Math.floor(Math.random() * 40));
+      barChart1.data.datasets[0].data = newData;
+      barChart1.data.labels = newData;
+      barChart1.update();
+
+      newData = Array.from({length: 20}, () => Math.floor(Math.random() * 40));
+      barChart2.data.datasets[0].data = newData;
+      barChart2.data.labels = newData;
+      barChart2.update();
+    });
+
+    $('#startRace').click(function() {
+      sharedLineChart.data.datasets[0].data = [0];
+      sharedLineChart.data.datasets[1].data = [0];
+      sharedLineChart.data.labels = [0];
+      sharedLineChart.update();
+
+      var algo = $('#bottom-comparison-1').val();
+      var pivot_type = $('#bottom-pivot-1').val();
+      var sort_fn1 = sorting.get_sort_fn(algo, pivot_type);
+
+      var algo = $('#bottom-comparison-2').val();
+      var pivot_type = $('#bottom-pivot-2').val();
+      var sort_fn2 = sorting.get_sort_fn(algo, pivot_type);
+
+      var animation1 = new sorting.AnimatedArray(barChart1.data.datasets[0].data, barChart1, 100, sharedLineChart, sharedLineChart.data.datasets[0]);
+      sort_fn1(animation1);
+      var animation2 = new sorting.AnimatedArray(barChart2.data.datasets[0].data, barChart2, 100, sharedLineChart, sharedLineChart.data.datasets[1]);
+      sort_fn2(animation2);
+      });
+    });
+    </script>
+  </body>
+</html>
