@@ -16,117 +16,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- sitewide styling -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- page-specific styling -->
 
-    <link rel = "stylesheet" type = "text/css" href = "main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <!-- Typefaces -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Add icon library -->
+    <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--- testing --->
 
     <title>Jackson Hammond</title>
   </head>
   <body>
 
-    <div class="container">
-      <div class="myNavBar" id="myTopnav">
-        <a class="navbar-brand" aria-label="My Logo" href="#">
-          <img src="assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
-        </a>
-        <a href="assets/Jackson_Hammond_Resume.pdf">RESUME</a>
-        <a href="About.html">ABOUT</a>
-        <a href="index.html" class="active">WORK</a>
-        <a href="javascript:void(0);" aria-label="Hamburger menu" class="icon" onclick="navBarHandling()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-
     <main role="main">
-      <div class = "jumbotron jumbotron-fluid d-flex align-items-center" id = "mainJumbotron">
-        <div class = "container">
-          <div class="col-sm-12" >
-            <h1> <span class="hero-text" >Hi there!</span></h1>
-            <h1><a href="About.html" class="hero-text">I'm Jackson.</a></h1>
-            <p>
-              <span class="copy-emphasis">Digital product designer</span> from Ann Arbor.<br>
-              <span class="copy-emphasis">UX Design Fellow</span> at Michigan's Office of Academic Innovation.<br>
-              I want to create better experiences <span class="copy-emphasis">for people.</span>
-          </p>
-          </div>
-        </div>
+      <div class='container'>
+        <p><span class="hero-text" >Hi there!</span></p>
+        <p><a href="About.html" class="hero-text">I'm Jackson.</a></p>
+        <p><span class="copy-emphasis">Digital product designer</span> from Ann Arbor.</p>
+        <p><span class="copy-emphasis">UX Design Fellow</span> at Michigan's Office of Academic Innovation.</p>
+        <p>I want to create better experiences <span class="copy-emphasis">for people.</span></p>
       </div>
-
-
-      <div class = "container">
-        <div class = "row">
-          <div class = "col-lg-4 col-md-6 col-sm-12 ">
-            <div class = "thumbnail project-card mx-auto">
-              <a href = "projects/3D_Emergency.html">
-                <img src = "assets/Thumbnails/3DE_cropped_thumbnail.png" alt = "3D Emergency" class = "project-image">
-                <div class = "caption">
-                  <p class="project-name">3D Emergency</p>
-                  <p class="project-type">UX Design and Research</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class = "col-lg-4 col-md-6 col-sm-12">
-            <div class = "thumbnail project-card mx-auto">
-              <a href = "projects/Great_Lakes_Legends.html">
-                <img src = "assets/Thumbnails/great_lakes_legends.jpg" alt = "Great Lakes Legends" class = "project-image">
-                <div class = "caption">
-                  <p class="project-name">Great Lakes Legends</p>
-                  <p class="project-type">Product Design</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class = "col-lg-4 col-md-6 col-sm-12">
-            <div class = "thumbnail project-card mx-auto">
-              <a href = "projects/Autodesk_Consulting.html">
-                <img src = "assets/Autodesk_Consulting/Autodesk_logo_dark.jpg" alt="Autodesk Consulting" class = "project-image">
-                <div class = "caption">
-                  <p class="project-name">Consulting with Autodesk</p>
-                  <p class="project-type">User Experience Research</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class = "col-lg-4 col-md-6 col-sm-12">
-            <div class = "thumbnail project-card mx-auto">
-              <a href = "projects/development_projects.html">
-                <img src = "assets/development_projects/code_sample.png" alt="My Dev projects" class="project-image">
-                <div class = "caption">
-                  <p class="project-name">My Development Projects</p>
-                  <p class="project-type">Web Development</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </main>
 
     <footer>
-      <div class="container">
+      <div class='container'>
         <h6>Feel free to reach out if you want to connect or just say hi!</h6>
         <a class="footer-email" href="mailto:jbhammon@umich.edu">jbhammon@umich.edu</a>
-        <div class="social-links">
-          <a href="https://github.com/jbhammon" target="_blank" class="fa fa-github" aria-label="My Github account"></a>
-          <a href="https://medium.com/@malts18" target="_blank" class="fa fa-medium" aria-label="My Medium account"></a>
-          <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target="_blank" class="fa fa-linkedin" aria-label="My LinkedIn account"></a>
-        </div>
         <small class="footer-copyright">Pulled up with Bootstrap 4 &#169; 2019 Jackson Hammond</small>
       </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--- My JavaScript --->
     <script src="myscripts.js"></script>
 
