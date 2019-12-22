@@ -19,6 +19,7 @@
     <!-- sitewide styling -->
     <link rel="stylesheet" type="text/css" href="styles/css/base.css">
     <!-- page-specific styling -->
+    <link rel="stylesheet" type="text/css" href="styles/css/index.css">
 
     <!-- Typefaces -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -31,13 +32,47 @@
   <body>
 
     <main role="main">
-      <div class='container'>
-        <p><span class="hero-text" >Hi there!</span></p>
-        <p><a href="About.html" class="hero-text">I'm Jackson.</a></p>
-        <p><span class="copy-emphasis">Digital product designer</span> from Ann Arbor.</p>
-        <p><span class="copy-emphasis">UX Design Fellow</span> at Michigan's Office of Academic Innovation.</p>
-        <p>I want to create better experiences <span class="copy-emphasis">for people.</span></p>
+      <!-- Navbar, courtesy of W3Schools -->
+      <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <div class="topnav" id="myTopnav">
+        <a class="navbar-brand" aria-label="My Logo" href="#">
+          <img src="assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
+        </a>
+        <a href="#news">RESUME</a>
+        <a href="#contact">ABOUT</a>
+        <a href="#about">WORK</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarHandling()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
+
+      <div class='container'>
+        <div class='homepage-header'>
+          <p><span class="hero-text" >Hi there!</span></p>
+          <p><a href="About.html" class="hero-text">I'm Jackson.</a></p>
+          <p><span class="copy-emphasis">Digital product designer</span> from Ann Arbor.</p>
+          <p><span class="copy-emphasis">UX Design Fellow</span> at Michigan's Office of Academic Innovation.</p>
+          <p>I want to create better experiences <span class="copy-emphasis">for people.</span></p>
+        </div>
+
+        <div class='row'>
+          <div class='col-half'>
+            <a href='projects/3D_Emergency.html'>
+              <img class='thumbnail' src='assets/Thumbnails/3DE_cropped_thumbnail.png'>
+            </a>
+            <p>3D Emergency</p>
+            <p>UX Design and Research</p>
+          </div>
+          <div class='col-half'>
+            <a href='projects/3D_Emergency.html'>
+              <img class='thumbnail' src='assets/Thumbnails/3DE_cropped_thumbnail.png'>
+            </a>
+            <p>3D Emergency</p>
+            <p>UX Design and Research</p>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer>
