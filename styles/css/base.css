@@ -21,12 +21,12 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-a:not(:first-child) {
+.topnav a:not(:first-child) {
   float: right;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  Scolor: #673AB7;
+  color: #673AB7;
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
@@ -70,4 +70,22 @@ a:not(:first-child) {
   text-align: center;
   max-width: 1140px;
   margin: auto;
+}
+.condensed-text-wrapper {
+  line-height: 0.5;
+}
+.footer {
+  margin: 4em auto;
+  text-align: center;
+}
+.footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #313131;
+}
+.footer a:hover {
+  color: #673AB7;
+}
+.copy-low-emphasis {
+  color: #A9A9A9;
 }

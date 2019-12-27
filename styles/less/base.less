@@ -27,12 +27,12 @@ body {
  text-decoration: none;
 }
 
-a:not(:first-child) {
+.topnav a:not(:first-child) {
 	float: right;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {S
+.topnav a:hover {
  color: @purple;
 }
 
@@ -78,4 +78,27 @@ a:not(:first-child) {
   text-align: center;
   max-width: 1140px;
   margin: auto;
+}
+
+.condensed-text-wrapper {
+  line-height: 0.5;
+}
+
+.footer {
+  margin: 4em auto;
+  text-align: center;
+}
+
+.footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: @copy;
+}
+
+.footer a:hover {
+  color: @purple;
+}
+
+.copy-low-emphasis {
+  color: #A9A9A9;
 }

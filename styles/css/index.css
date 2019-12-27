@@ -7,6 +7,9 @@
   text-align: left;
   max-width: 40em;
 }
+.homepage-header p {
+  line-height: 1.6;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
