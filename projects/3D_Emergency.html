@@ -16,13 +16,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- sitewide styling -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/base.css">
+    <!-- page-specific styling -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/3de.css">
 
-    <link rel = "stylesheet" type = "text/css" href = "../main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <!-- Typefaces -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Add icon library -->
+    <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Jackson Hammond</title>
@@ -31,220 +34,162 @@
 
   <body>
 
-    <div class="container">
-      <div class="myNavBar" id="myTopnav">
-        <a class="navbar-brand" aria-label="My Logo" href="../index.html">
+    <main role="main">
+      <!-- Navbar, courtesy of W3Schools -->
+      <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <div class="topnav" id="myTopnav">
+        <a class="navbar-brand" aria-label="My Logo" href="#">
           <img src="../assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
         </a>
-        <a href="../assets/Jackson_Hammond_Resume.pdf">RESUME</a>
-        <a href="../About.html">ABOUT</a>
-        <a href="../index.html">WORK</a>
-        <a href="javascript:void(0);" aria-label="Hamburger menu" class="icon" onclick="navBarHandling()">
+        <a href="#news">RESUME</a>
+        <a href="#contact">ABOUT</a>
+        <a href="#about">WORK</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarHandling()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
-    </div>
 
-    <main role="main">
-      <div class="div-buffer-help"></div>
-      <div class="jumbotron project-jumbotron d-flex align-items-center">
-        <div class = "container">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 col-center">
-              <h1>3D Emergency</h1>
-              <p>A solo project focusing on interaction design as a method to improve calling 911 in the United States.</p>
-              <p>
-                <span class="copy-emphasis">Role:</span> UX Designer and Researcher<br>
-                <span class="copy-emphasis">Tools:</span> Adobe Illustrator and Adobe XD<br>
-                <span class="copy-emphasis">Timeframe:</span> Sep. 2018 - Dec. 2018
-              </p>
-            </div>
+      <div class = "container">
+        <div class='row'>
+          <div class='header col-full'>
+            <h1>3D Emergency</h1>
+            <p>A solo project focusing on interaction design as a method to improve calling 911 in the United States.</p>
+            <p>
+              <span class="copy-emphasis">Role:</span> UX Designer and Researcher<br>
+              <span class="copy-emphasis">Tools:</span> Adobe Illustrator and Adobe XD<br>
+              <span class="copy-emphasis">Timeframe:</span> Sep. 2018 - Dec. 2018
+            </p>
           </div>
         </div>
       </div>
 
-
-      <!---Actual content about the project --->
-
-      <div class="container">
-        <div class="project-page-card">
-          <div class = "row justify-content-center">
-            <div class="col-lg-10">
-              <img src="../assets/3D_Emergency/mobile_screen_mockup_collage.png" class="img-fluid" alt="Screenshots on generic mockups">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="sticky-project-nav">
-        <table class="project-section-navigation">
-          <tr>
-            <td class="project-section-navigation-cell"><a href="#quickSummary">QUICK SUMMARY</a></td>
-            <td class="project-section-navigation-cell"><a href="#newTools">THE NEW TOOLS</a></td>
-            <td class="project-section-navigation-cell"><a href="#researchDesignProcess">RESEARCH & DESIGN PROCESS</a></td>
-            <td class="project-section-navigation-cell"><a href="#prototypesDemos">PROTOTYPES & DEMOS</a></td>
-            <td class="project-section-navigation-cell"><a href="#reflections">REFLECTIONS</a></td>
-          </tr>
-        </table>
+      <div class='container'>
+        <img src="../assets/3D_Emergency/mobile_screen_mockup_collage.png" class="img-fluid" alt="Screenshots on generic mockups">
       </div>
 
       <div class="container">
-
-        <div class="row justify-content-center project-section">
-          <div class="col-sm-10 mb-5">
-            <h4 class="project-section-header" id="quickSummary">QUICK SUMMARY</h4>
-          </div>
-        </div>
-        <div>
-          <div class = "row justify-content-center">
-            <div class="col-sm-10 mb-5">
-              <h5>Inspiration</h5>
-              <p class="mb-5">I toured a local 911 center, and their primary concern was call processing time, or how long their operators spent speaking with each caller. I saw how much of the work was still done manually, and knew that meant more time callers had to spend on hold.</p>
-              <h5>Design Goal</h5>
-              <p class="mb-5">After speaking with 911 dispatchers I learned that GPS coordinates from smartphones are being incorporated into the 911 call process, but they're not a panacea. This project was an attempt to design a new tool that can be used when dialing 9-1-1 in the United States that would help decrease the time it takes to locate a caller.</p>
-              <h5>Outcome</h5>
-              <p>I re-imagined the interaction between 911 callers and dispatchers when callers need to describe their specific location within a building. I did this by adding a new tool to caller's physical environments, QR codes, and designed a solution to integrate them with the current process of calling 911. I created prototypes to model how the new interactions would happen on both a caller's smartphone and the monitors in front of 911 dispatchers.</p>
-            </div>
-            <div class="col-sm-10">
-              <img src="../assets/3D_Emergency/QR_code_poster_mock_up.png" class="img-fluid" alt="QR Code poster mockup">
-            </div>
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h2>Summary</h2>
+            <h3>Inspiration</h3>
+            <p>I toured a local 911 center, and their primary concern was call processing time, or how long their operators spent speaking with each caller. I saw how much of the work was still done manually, and knew that meant more time callers had to spend on hold.</p>
+            <h3>Design Goal</h3>
+            <p>After speaking with 911 dispatchers I learned that GPS coordinates from smartphones are being incorporated into the 911 call process, but they're not a panacea. This project was an attempt to design a new tool that can be used when dialing 9-1-1 in the United States that would help decrease the time it takes to locate a caller.</p>
+            <h3>Outcome</h3>
+            <p>I re-imagined the interaction between 911 callers and dispatchers when callers need to describe their specific location within a building. I did this by adding a new tool to caller's physical environments, QR codes, and designed a solution to integrate them with the current process of calling 911. I created prototypes to model how the new interactions would happen on both a caller's smartphone and the monitors in front of 911 dispatchers.</p>
+            <img src="../assets/3D_Emergency/QR_code_poster_mock_up.png" class="img-fluid" alt="QR Code poster mockup">
           </div>
         </div>
 
-        <div class="row justify-content-center project-section">
-          <div class="col-sm-10  mb-5">
-            <h4 class="project-section-header" id="newTools">THE NEW TOOLS</h4>
-          </div>
-        </div>
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h2>The New Tools</h2>
 
-        <div class="project-page-card">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-sm-5 mb-5">
-              <img src="../assets/3D_Emergency/QR_Code_Scan.gif" class="float-right image-width-eighty" alt="QR Code scanning demo">
-            </div>
-            <div class="col-sm-5 mb-5">
-              <h5>QR Code Integration</h5>
-              <p>Callers would be able to use the camera built into their smartphone to scan emergency QR code posters that are in the room with them. The location information that's encoded in them would be pulled out and displayed for them to communicate to the 911 dispatcher they're speaking with.</p>
-            </div>
-          </div>
-
-          <div class="row justify-content-center align-items-center">
-            <div class="col-sm-5 mb-5">
-              <h5>Floorplan for the Caller</h5>
-              <p>Callers would be able to see their location on an interactive floorplan to help with taking instructions from the dispatchers.</p>
-            </div>
-            <div class="col-sm-5 mb-5">
-              <img src="../assets/3D_Emergency/Phone_View_Map.gif" class="image-width-eighty" alt="Interactive floorplan demo">
-            </div>
-          </div>
-
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-10 col-sm-12">
-              <h5>Floorplan for the dispatcher</h5>
-              <p>Dispatchers would also be able to see where a caller is on an interactive floorplan. In addition, they would be presented with more information than the caller, such as where first responders should enter a building. This information could be passed down the workflow to be presented to the first responders themselves.</p>
-            </div>
-            <div class="col-md-10 col-sm-12">
-              <img src="../assets/3D_Emergency/Dispatch_View_Map.gif" class="float-right image-width-hundo" alt="Dispatcher map demo gif">
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row justify-content-center project-section">
-          <div class="col-sm-10 mb-5">
-            <h4 class="project-section-header" id="researchDesignProcess">RESEARCH & DESIGN PROCESS</h4>
-          </div>
-        </div>
-
-        <div class="project-page-card">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
-              <p>I started brainstorming about two approaches for reducing 911 call processing time. On one hand were solutions to help operators, and on the other were solutions to help callers. Then I turned those ideas into some storyboards.</p>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
-              <div class="gallery-two-column">
-                <div class="mb-3">
-                  <img src="../assets/3D_Emergency/Storyboard_1.jpg" class="img-fluid" alt="Storyboard version 1">
+            <div class='side-by-side'>
+              <div>
+                <img src="../assets/3D_Emergency/QR_Code_Scan.gif" class='phone-screen-img' alt="QR Code scanning demo">
+                <div class='img-caption'>
+                  <p>QR Code Integration</p>
                 </div>
-                <div class="mb-3">
-                  <img src="../assets/3D_Emergency/Storyboard_2.jpg" class="img-fluid" alt="Storyboard version 2">
+              </div>
+              <div>
+                <img src="../assets/3D_Emergency/Phone_View_Map.gif" class='phone-screen-img' alt="QR Code scanning demo">
+                <div class='img-caption'>
+                  <p>Floor Plan for Callers</p>
                 </div>
-                <div class="mb-3">
-                  <img src="../assets/3D_Emergency/Storyboard_4.jpg" class="img-fluid" alt="Storyboard version 3">
+              </div>
+            </div>
+
+            <p>Callers would be able to use the camera built into their smartphone to scan emergency QR code posters that are in the room with them. The location information that's encoded in them would be displayed for them to communicate to the 911 dispatcher they're speaking with.</p>
+            <p>They would be able to see their location on an interactive floorplan to help with taking instructions from the dispatchers.</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <img src="../assets/3D_Emergency/Dispatch_View_Map.gif" class="float-right image-width-hundo" alt="Dispatcher map demo gif">
+            <div class='img-caption'>
+              <p>Floor Plan for Dispatchers</p>
+            </div>
+            <p>Dispatchers would also be able to see where a caller is on an interactive floorplan. In addition, they would be presented with more information than the caller, such as where first responders should enter a building. This information could be passed down the workflow to be presented to the first responders themselves.</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class="text-wrapper">
+            <h2>Research & Design Process</h2>
+            <p>I started brainstorming about two approaches for reducing 911 call processing time. On one hand were solutions to help operators, and on the other were solutions to help callers. Then I turned those ideas into some storyboards.</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='photo-array'>
+            <img src="../assets/3D_Emergency/Storyboard_1.jpg" alt="Storyboard version 1">
+            <img src="../assets/3D_Emergency/Storyboard_2.jpg" alt="Storyboard version 2">
+          </div>
+          <div class='photo-array'>
+            <img src="../assets/3D_Emergency/Storyboard_4.jpg" alt="Storyboard version 3">
+            <img src="../assets/3D_Emergency/Storyboard_5.jpg" alt="Storyboard version 4">
+          </div>
+        </div>
+
+          <div class="row">
+            <div class='text-wrapper'>
+              <p>One idea has stuck out to me, because it could solve a problem the 911 call center manager said she hasn't heard a good solution for yet. Figuring out which floor or room of a building you're in isn't something that GPS can help with, and can slow down operators. What if we encoded that information in an easy way for smart phones to process like QR codes? </p>
+
+              <div class='side-by-side'>
+                <div>
+                  <img src="../assets/3D_Emergency/Mid_call_scan_sketch.jpg" class='phone-screen-img' alt="Detailed sketch of call screen">
                 </div>
-                <div class="mb-3">
-                  <img src="../assets/3D_Emergency/Storyboard_5.jpg" class="img-fluid" alt="Storyboard version 4">
+                <div>
+                  <img src="../assets/3D_Emergency/Sketches_from_in_class_pitch.jpg" class='phone-screen-img' alt="Detailed sketch of usage demo">
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
-              <br>
-              <p>One idea has stuck out to me, because it could solve a problem the 911 call center manager said she hasn't heard a good solution for yet. Figuring out which floor or room of a building you're in isn't something that GPS can help with, and can slow down operators. What if we encoded that information in an easy way for smart phones to process like QR codes? </p>
-              <br>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-lg-5 mb-5">
-              <img src="../assets/3D_Emergency/Mid_call_scan_sketch.jpg" class="float-right image-width-hundo" alt="Detailed sketch of call screen">
-            </div>
-            <div class="col-lg-5 mb-5">
-              <img src="../assets/3D_Emergency/Sketches_from_in_class_pitch.jpg" class="image-width-hundo" alt="Detailed sketch of usage demo">
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
+          <div class="row">
+            <div class="text-wrapper">
               <p>I created some personas and story maps to help further understand the details an emergency system like this would need. I drew inspiration for the persona design from <a href="https://compose.ly/strategy/user-persona-guide/" target="_blank">Compose.ly</a>, and created the story maps with <a href="https://cardboardit.com/" target="_blank">Cardboard</a>.</p>
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-7 col-sm-12 mb-5">
+          <div class="row">
+            <div class="text-wrapper">
+              <h3>Primary Persona</h3>
+              <p>Victoria is visiting her friend's new apartment when an emergency happens. She needs to describe her location as best as she can even though she's never been there before.</p>
               <img src="../assets/3D_Emergency/Personas_1.png" class="float-right image-width-hundo" alt="Persona 1">
             </div>
-            <div class="col-md-3 col-sm-12 mb-5">
-              <h5>Primary Persona</h5>
-              <p>Victoria is visiting her friend's new apartment when an emergency happens. She needs to describe her location as best as she can even though she's never been there before.</p>
-            </div>
+
           </div>
 
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-3 col-sm-12 mb-5">
-              <h5>Served Persona</h5>
+          <div class="row">
+            <div class="text-wrapper">
+              <h3>Served Persona</h3>
               <p>Vince is 911 dispatcher in a large American city. He frequently needs to find out where a caller is inside of large buildings.</p>
-            </div>
-            <div class="col-md-7 col-sm-12 mb-5">
               <img src="../assets/3D_Emergency/Personas_4.png" class="image-width-eighty" alt="Persona 2">
             </div>
           </div>
 
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
-              <p>Before I started making wireframes and paper prototypes I needed to iron out a few design details with the features I had proposed using a QOC analysis.</p>
+          <div class="row">
+            <div class="text-wrapper">
+              <p>Before I started making wireframes and paper prototypes I ironed out some design details with the features I had proposed using a "Questions Options and Criteria" (QOC) analysis.</p>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-5 col-sm-12">
-              <img src="../assets/3D_Emergency/Slide10.PNG" class="image-width-hundo" alt="Feature analysis 1">
+
+          <div class='row'>
+            <div class='photo-array'>
+              <img src='../assets/3D_Emergency/Slide10.PNG' class='border' alt="Feature analysis 1">
+              <img src='../assets/3D_Emergency/Slide11.PNG' class='border' alt="Feature analysis 2">
             </div>
-            <div class="col-md-5 col-sm-12">
-              <img src="../assets/3D_Emergency/Slide11.PNG" class="image-width-hundo" alt="Feature analysis 2">
-            </div>
-            <div class="col-md-5 col-sm-12 mb-5">
-              <img src="../assets/3D_Emergency/Slide12.PNG" class="image-width-hundo" alt="Feature analysis 3">
-            </div>
-            <div class="col-md-5 col-sm-12 mb-5">
-              <img src="../assets/3D_Emergency/Slide13.PNG" class="image-width-hundo" alt="Feature analysis">
+            <div class='photo-array'>
+              <img src='../assets/3D_Emergency/Slide12.PNG' class='border' alt="Feature analysis 3">
+              <img src='../assets/3D_Emergency/Slide13.PNG' class='border' alt="Feature analysis 4">
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-sm-10">
+
+          <div class="row">
+            <div class="text-wrapper">
               <p>I decided to implement the critical feature of scanning QR codes to find location information by:</p>
               <ul>
                 <li>Scanning a poster of a QR code once a 911 call has been placed</li>
@@ -253,61 +198,53 @@
               </ul>
             </div>
           </div>
-        </div>
 
-        <div class="row justify-content-center project-section">
-          <div class="col-sm-10 mb-5">
-            <h4 class="project-section-header" id="prototypesDemos">PROTOTYPES & DEMOS</h4>
-          </div>
-        </div>
-        <div class="project-page-card">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
+          <div class="row">
+            <div class="text-wrapper">
+              <h2>Prototypes and Demos</h2>
               <p>Links to demos of a paper and mid-fidelity prototype are below.</p>
-              <a href="https://youtu.be/E_Wjl02KlPY" target="_blank">Paper Prototype</a><br>
-              <a href="https://youtu.be/kfK_NslRQ0A" target="_blank">Mid-Fidelity Prototype</a><br>
-              <a href="https://youtu.be/XBtnex3qL28" target="_blank">Final Prototype Demo</a><br>
+              <ul>
+                <li><a href="https://youtu.be/E_Wjl02KlPY" target="_blank">Paper Prototype</a></li>
+                <li><a href="https://youtu.be/kfK_NslRQ0A" target="_blank">Mid-Fidelity Prototype</a></li>
+                <li><a href="https://youtu.be/XBtnex3qL28" target="_blank">Final Prototype Demo</a></li>
+              </ul>
             </div>
           </div>
-        </div>
 
-        <div class="row justify-content-center project-section">
-          <div class="col-sm-10 mb-5">
-            <h4 class="project-section-header" id="reflections">REFLECTION</h4>
-          </div>
-        </div>
-        <div class="project-page-card">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 mb-5">
+          <div class="row">
+            <div class="text-wrapper">
+              <h2>Reflection</h2>
               <p>This project was a unique challenge for me to take on. It involved designing and prototyping interfaces for two separate parties using different devices working together to achieve a goal. I believe my final solution was creative and practical, but there is certainly room for improvement. QR codes are one way to encode information for smartphones to use, but they aren't foolproof. Providing a secondary way to input this room number information is something that warrants more research.</p>
 
-              <p>I plan to also present this idea to the local 911 center I toured at the beginning of this project to gather feedback from the experts there. I hope they can help improve the dispatcher UI I designed, and suggest other useful information to include on the interactive floor plan.</p>
-              <br>
+                <p>I plan to also present this idea to the local 911 center I toured at the beginning of this project to gather feedback from the experts there. I hope they can help improve the dispatcher UI I designed, and suggest other useful information to include on the interactive floor plan.</p>
             </div>
           </div>
-        </div>
 
       </div>
     </main>
 
     <footer>
-      <div class="container">
-        <h6>Feel free to reach out if you want to connect or just say hi!</h6>
-        <a class="footer-email" href="mailto:jbhammon@umich.edu">jbhammon@umich.edu</a>
-        <div class="social-links">
-          <a href="https://github.com/jbhammon" target="_blank" class="fa fa-github" aria-label="My Github account"></a>
-          <a href="https://medium.com/@malts18" target="_blank" class="fa fa-medium" aria-label="My Medium account"></a>
-          <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target="_blank" class="fa fa-linkedin" aria-label="My LinkedIn account"></a>
+      <div class='containter'>
+        <div class='footer'>
+          <div class ='condensed-text-wrapper' style='margin-bottom: 2rem;'>
+            <p>Connect with me</p>
+            <p>
+              <a href="mailto:jbhammon@umich.edu">email.</a>
+              <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target='_blank'>linkedin.</a>
+              <a href="https://github.com/jbhammon" target='_blank'>github.</a>
+            </p>
+          </div>
+          <div class='copy-low-emphasis condensed-text-wrapper'>
+            <p>Built with ❤️ in Ann Arbor</p>
+            <p class="footer-copyright">&#169; 2019 Jackson Hammond</p>
+          </div>
         </div>
-        <small class="footer-copyright">Pulled up with Bootstrap 4 &#169; 2019 Jackson Hammond</small>
       </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--- My JavaScript --->
-    <script src="../myscripts.js"></script>
+    <script src="../scripts/myscripts.js"></script>
 
   </body>
 </html>

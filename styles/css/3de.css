@@ -1,0 +1,8 @@
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+}
+.border {
+  border: 1px solid #313131;
+  border-radius: 4px;
+}
