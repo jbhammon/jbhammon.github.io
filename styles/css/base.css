@@ -19,7 +19,7 @@ p {
 .topnav a {
   float: left;
   display: block;
-  color: #313131;
+  color: #787878;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -29,11 +29,11 @@ p {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: #673AB7;
+  color: #313131;
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  color: #673AB7;
+  color: #313131;
 }
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -119,11 +119,11 @@ p {
 .footer a {
   font-weight: bold;
   text-decoration: none;
-  color: #313131;
+  color: #787878;
 }
 .footer a:hover {
-  color: #673AB7;
+  color: #313131;
 }
 .copy-low-emphasis {
-  color: #A9A9A9;
+  color: #787878;
 }
