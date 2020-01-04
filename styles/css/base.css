@@ -7,6 +7,9 @@ body {
   color: #313131;
   font-size: 100%;
 }
+p {
+  line-height: 1.6;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #fff;
@@ -75,10 +78,6 @@ body {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-}
-.align-center {
-  display: block;
-  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .col-half {
