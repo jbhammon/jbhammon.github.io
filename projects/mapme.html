@@ -84,144 +84,141 @@
       </div>
 
       <div class="container">
+        <div class='row'>
+          <div class='col-half'>
+            <img src="../assets/mapme/intro1.jpg" alt="Physical prototype image">
+          </div>
+          <div class='col-half'>
+            <img src="../assets/mapme/intro2.png" alt="Interactive prototype image">
+          </div>
+        </div>
         <div class="row">
           <div class="text-wrapper">
-            <h2>Project Summary</h2>
-            <p>My team, Corzetti Labs, and I partnered with Autodesk to assess the learning and onboarding materials for their Revit LT software, a program designed for architects to model their designs in three dimensions. They were interested to learn how well supported new Revit LT users are with the learning content available to them, as well as how discoverable and useful it is for users.</p>
-            <p>The key user groups they were interested in are were Revit LT users who don't have any prior CAD experience, primarily undergraduate architectural students, and architects who switch from other CAD software to Revit LT.</p>
+            <p>MapMe is a grocery shopping system integrated with users’ smartphones and shopping carts to help them improve their shopping efficiency and experience.</p>
+            <p>MapMe can integrate with any grocery store smartphone app, and users could have a great experience creating a list, syncing with the smart shopping cart, following a responsive “Bird’s-Eye View” map and navigation line to find items, displaying real-time coupon and sale information, and finishing shopping quicker and more enjoyably.</p>
           </div>
         </div>
 
         <div class='row'>
           <div class='text-wrapper'>
-            <h2>Research Process</h2>
-            <p>Below I outlined all the research techniques we used throughout the process, what we learned, and how we applied our findings to later portions of the project.</p>
+            <h2>Motivation</h2>
+            <p>Most people have probably had shopping trips that looked and felt like this:</p>
+            <img src='../assets/mapme/messy route.jpg' alt='Back tracking in the grocery store'>
+            <p>We observed that shoppers are usually <span style='font-weight: bold;'>crisscrossing grocery stores while shopping.</span> The reason, of course, is because they have <span style='font-weight: bold;'>difficulty finding every last item</span> or forgetting to pick up items along their way. If shoppers are not familiar with the grocery store, it will take much more time to find items.</p>
+
+            <p>A recent Gallup Poll shows that 82% of US adults go grocery shopping in a grocery store at least once a week (Jones, 2019). Through our research and interviews during our design process, we also found that relatively <span style='font-weight: bold;'>everyone wants to see coupons and sales information while they shop.</span> When all these ideas present, it was an excellent opportunity for us to find a better solution to help improve grocery shopping efficiency.</p>
           </div>
         </div>
 
-        <div class ='row'>
-
-          <div class='col-half'>
-            <h3>1. Interaction Map</h3>
-            <p>The team started our research creating an interaction map of the help documentation Autodesk provides to users, both online and in the Revit LT software.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>Most help in the software directs users to online documentation</li>
-              <li>Many sources of online help, the large volume might overwhelm new users</li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/concept map image.svg" alt="Concept map illustration">
-          </div>
-          <div class='col-half'>
-            <h3>2. User Interviews</h3>
-            <p>Next we interviewed architecture software users to build personas that match new Revit LT users. In total we interviewed four people, two students and two professionals, who had a varying levels of Revit LT experience.</p>
-            <p>I helped recruit users, create the interview protocol, conduct two interviews, and create one of three personas.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>Users’ previous CAD experiences were not translating to proficiency with Revit LT</li>
-              <li>Users preferred a walkthrough-style approach to tutorial materials</li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/interview image.svg" alt="User interview illustration">
-          </div>
-          <div class='col-half'>
-            <h3>3. Competitive Evaluation</h3>
-            <p>We researched five products we considered direct or partial competitors of Revit LT to compare the online learning materials each company offers. Our evaluation helped find some methods Revit LT could incorporate.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>Help materials were often synthesized in a combination of visual and text media</li>
-              <li>For most products, official forums exist and are used as separate knowledge bases</li>
-              <li>For some products, help content is tailored to different BIM proficiency levels</li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/comp eval image.svg" alt="Competitive evaluation illustration">
-          </div>
-          <div class='col-half'>
-            <h3>4. Online Survey</h3>
-            <p>Our team followed the competitive evaluation up with a survey we distributed to Revit LT users, both university students and professionals. Our goals was to gather opionions about Autodesk’s online help documentation and onboarding materials from a wide audience, as well as demographic details about users, and more general preferences regarding methods of online learning.</p>
-            <p>The survey was live for 10 days and we gathered 63 complete responses. I assisted the team with distributing the survey online, and with analyzing our results to draw conclusions to present to Autodesk.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>YouTube videos, <span style='font-style: italic;'>especially non-Autodesk created videos</span>, are popular for learning across age groups</li>
-              <li>There was a strong preference for documentation with videos and images, and step-by-step, guided help</li>
-              <li>Users find Autodesk community forums more helpful than provided documentation</li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/survey image.svg" alt="Online survey illustration">
-          </div>
-          <div class='col-half'>
-            <h3>5. Heuristic Evaluation</h3>
-            <p>Using the 10 usability heuristics from Jakob Nielsen we investigated the information structure and usability of Revit LT’s sources of help documentation. I focused on the help documentation within the software, but also evaluated the online resources and aggregated those findings with my teammates.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>The heuristic most critically violated was “Error prevention and recovery”</li>
-              <li>The next most critically violated were “Match between system and the real world” and “User control and freedom”</li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/heur eval image.svg" alt="Heuristic evaluation illustration">
-          </div>
-          <div class='col-half'>
-            <h3>6. Preference Testing</h3>
-            <p>Next, our team conducted preference tests to assess user reactions to changes suggested by our survey and heuristic evaluation findings. The tests asked participants to which of two screens they preferred, one the current state of Revit LT’s help documentation and another a mockup our team created with small changes made.</p>
-            <p>I distributed the test to architects of varying backgrounds as a Google Form, and anaylzed our 10 responses to draw conclusions for Autodesk.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>Users described a preference for a clear information hierarchy when they’re searching for help online</li>
-              <li>Users often preferred all the relevant information to be consolidated to one page</li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/preference test image.svg" alt="Preference testing illustration">
-          </div>
-          <div class='col-half'>
-            <h3>7. Usability Testing</h3>
-            <p>Based on all our previous research we designed and conducted usability tests to gather first-hand data about how users use Revit LT’s help documentation. We met with five University of Michigan architecture students, sophomore to graduate level, for 30 to 60 minutes, and recorded the test audio and video for further analysis.</p>
-            <h4>Key Findings</h4>
-            <ul>
-              <li>Users often missed feature descriptions due to slow response times for hover instructions in the software</li>
-              <li>Advanced and intermediate users noted that online documentation weren’t always in line with the models and methods they believed were relevant</li>
-              <li>Search functionality was used more than organic browsing through the help sites, <span style='font-style: italic;'>regardless of experience level</span></li>
-            </ul>
-          </div>
-          <div class='col-half'>
-            <img src="../assets/Autodesk_Consulting/usab test image.svg" alt="Usability testing illustration">
-          </div>
-
-        </div>
-
-        <!-- <div class='row'>
-            <img src="../assets/Autodesk_Consulting/process_flowchart.png" alt="Flowchart for the group project">
-        </div> -->
         <div class='row'>
           <div class='text-wrapper'>
-            <h2>Overall Findings</h2>
-            <p>At the end of our research we presented our main findings and recommendations to our counterparts at Autodesk. Our main findings were as follows:</p>
-            <ul>
-              <li>Regardless of users’ experience with Revit or Revit LT, the search functionality was utilized more than organic browsing through the sidebar navigation.</li>
-              <li>Users preferred a walkthrough-style approach to tutorial materials.</li>
-              <li>Users often overlooked the provided help documentation within Revit LT.</li>
-              <li>Usability tests showed users of varying experience had mixed opinions about the suggested workflows and documentation examples.</li>
-            </ul>
-            <p>Given these findings, we recommended they do the following:</p>
-            <ul>
-              <li>Redesign the help site to focus on searching as the first action, rather than clicking through thumbnails or navigation links.</li>
-              <li>Make it more apparent within the software how users can learn more about using Revit LT, such as how Adobe XD helps its new users.</li>
-              <li>Examples used to explain the how or why of the workflows should always be relevant and focused on the work that Revit LT users will be conducting.</li>
-            </ul>
+            <h2>Formative Study and Results</h2>
+            <p>To better understand our possible design solution and narrow down our target audience, we used the following methods and timeline to realize the design of our product.</p>
+            <img src='../assets/mapme/formative study.png' alt='Formative study timeline'>
+            <p>Our group engaged in an iterative design process to explore various concepts by utilizing different research methods, such as a culture probe and user enactments, before generating our final physical prototype. Below are the fundamental processes and results in our design.</p>
           </div>
         </div>
+
         <div class='row'>
           <div class='text-wrapper'>
-            <h2>Lessons Learned</h2>
-            <p>This was a large-scale project and our research group certainly learned a great deal together. We saw recruiting users is difficult to get right for many reasons. It's hard to identify the characteristics you should search for to find research participants, and even more difficult to convince them being a participant is worth their time. Short timelines can also force you to make compromises. For instance, we ran out of time to recruit any professional architects for our usability tests, and had to settle for testing with five college students.</p>
-            <p>Additionally, this was the first project that asked me to present my UX research and design work to stakeholders with no such background. Each report we submitted needed to speak plainly but directly to our findings. UX designers and researchers never work in a vacuum, and communicating my findings to a diverse group gave me experience I can take forward to future projects.</p>
+            <h3>Observations</h3>
+            <p>The most important finding in our observation was that many shoppers seem to backtrack, walk in circles, or zigzag across the store as they fill up their carts, which is not very efficient. This helped validate our initial motivations for the design. For more details of our observations, read our <a href='https://612-smartcart.github.io/post-1/index.html' target='_blanket'>Milestone 1 update.</a></p>
           </div>
         </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h3>Cultural Probe</h3>
+            <img src='../assets/mapme/cultural probe.png' alt='Cultural probe activity booklet pages'>
+            <p>We created a cultural probe to better understand participants’ experience in the grocery store. We asked participants to complete three parts: creating a photo journal during a shopping trip, completing an activity booklet after a trip, and completing a follow-up interview with our team. After sharing notes and insights we gathered from each activity book and follow-up interview, our group got two main results.</p>
+            <ul>
+              <li>Participants were not worried about finding something because they usually visit same grocery store and also comfortable asking for directions if they can’t find something.</li>
+              <li>Participants would like to know if something they want to buy is out of stock.</li>
+            </ul>
+            <p>These results helped to better define our target audience and shift the direction of our design. Rather than a turn-by-turn GPS-like system, we’re focusing on showing shoppers where items on their list are as they move through stores. For more details of our cultural probe, read our <a href='https://612-smartcart.github.io/milestone-2/index.html' target='_blanket'> Milestone 2 update.</a></p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h3>User Enactments</h3>
+            <img src='../assets/mapme/user enactment.png' alt='User enactment images'>
+            <p>Before conducting our user enactments, we listed several research questions regarding interface preference, navigation method, substitute suggestions and so on, to focus our research and better design and experiment with user enactments. We also chose five scenarios to simulate for shedding light on potential design opportunities.</p>
+            <p>Based on the results of user enactments and notes we collected from the follow-up interview, we received six key insights, and we chose the two most important insights list below as our key feature in our later prototype.</p>
+            <ul>
+              <li>Participants prefer the simplistic birds-eye view of the store with markers for list items, rather than turn-by-turn navigation to each item, and a search bar/item look-up with the phone as an interface.</li>
+              <li>Participants were eager to see a coupon system integrated with application list that offers personalized discounts when at the store.</li>
+            </ul>
+            <p>At this point, we had refined our design down to a specific system based on what we learned from our user enactments and previous milestones. We also identified the user’s interaction methods with the system and how it will fit into our audience’s grocery shopping routine. For more details of our user enactments, read our <a href='https://612-smartcart.github.io/milestone-3/index.html' target='_blanket'> Milestone 3 update.</a></p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h2>Experience Prototype and Results</h2>
+            <p>Our prototype is comprised of an interactive Invision prototype to act as the smartphone application, a smart cart with electronics, and physical products and props to simulate a grocery store.</p>
+            <img src='../assets/mapme/prototype1.png' alt='Prototype 1 image'>
+            <img src='../assets/mapme/prototype2.png' alt='Prototype 2 image'>
+            <p>For the user interface screen, we created a mockup to help improve users’ interaction with our product. The basic interaction within are creating a list, syncing with the smart cart, viewing the store floor plan, and coupon notifications. For the smart cart, we put all components in a box on the shopping cart, and the LED light will change to green to indicate a successful connection between the phone and cart. The light is controlled by a Particle photon microcontroller in the box, and we wrote C++ code to turn the light on and off for our demo. Our prototypes cover many aspects of the real shopping experience for users.</p>
+            <p>After we conducted the demo with these prototypes, our classmates were mostly concerned about privacy, which is a common issue that almost every application faces. How to protect users’ information and gain users’ trust is essential for every product, and is something this design needs to consider closely.</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h2>Final System Concept</h2>
+            <img src='../assets/mapme/key feature.png' alt='Final system key features'>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h3>Key Features</h3>
+            <ul>
+              <li>List Creation: MapMe allows users to create or add to a shopping list at any time.</li>
+              <li>QR Code: MapMe lets users scan a QR code to pair their phone with a smart shopping cart which has a Bluetooth sensor in it.</li>
+              <li>“Bird’s-Eye” view: after syncing with the cart, the users’ phone interface will show the location of all the items that users added in their list as well as the user themselves.</li>
+              <li>Coupon Integration: MapMe will automatically integrate coupons with the list so that users could see if there is any discount on the items they’re buying.</li>
+              <li>Navigation: MapMe will give users navigation lines towards items, but only when users ask for it.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h3>Demonstration Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eHc_DfQ_DlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h3>Ideal System Proposal</h3>
+            <img src='../assets/mapme/architecture.png' alt='Ideal system proposal architecture infographic'>
+            <p>The final proposed system consists of a sensor network that integrates with existing grocery store smartphone applications. Users pair their phone with a shopping cart by scanning the unique QR code on the cart, which establishes a Bluetooth connection. A network of indoor positioning sensors throughout the store will communicate with the hardware on cart with iBeacon technology. The cart communicates with the users phone via Bluetooth to show their location and where all the items are on their list on a bird’s-eye-view floor plan of the store.</p>
+            <p>This product would be sold to grocery store chains, Meijer in the example above, rather than exist as a standalone app for users to download. We would work with them to integrate our location-finding technology into their existing smartphone app, implement our sensor networks throughout their stores, and map their floor plans.</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='text-wrapper'>
+            <h2>Reflection</h2>
+            <p>We learned a lot about how people shop for items in grocery stores during this design process. We feel like we incorporated well what our research taught us, but there are certainly limitations to this design and areas that could be improved or further explored.</p>
+            <h3>Design Limitations</h3>
+            <p>Currently, this design requires users to own and use a smartphone to use this item-finding system. This is something we tried to avoid at the beginning of our design process, but our research led us to a smartphone-centric design.</p>
+            <p>Additionally, privacy remains a concern with a system like this. We gave users a clear and explicit way to disconnect their phone from the grocery cart, but users are also being tracked every step of the way through the store. Further research is required to see how much this bothers our target users.</p>
+            <p>When it came down to considering different system architecture and what our product could look or function like, we considered ingraining privacy in the conceptual design of the product. During a storming session we questioned whether we actually needed the cart. Ultimately we decided that the cart acts as a sort of conduit so that the dozens of beacons across the store aren’t all connecting with the phone. We believed that this adds an extra layer of security. We believe that the cart-to-phone data exchange will include built in encryption/anonymization so the person’s identity isn’t directly connected and collected with the cart’s location information.</p>
+            <p>This system also depends on how well a network of indoor positioning sensors can support a large number of users in a small space. For the sake of this project we are assuming that will work. However, our next steps should be to build the network we’re imagining and perform stress tests. How many users can it support in a large area? A small area? How many sensors are needed? How precisely can we calculate the user’s location?</p>
+            <h3>Demo Insights</h3>
+            <p>While preparing and performing the demo we learned that users might be nervous about leaving their phones mounted on their grocery cart. They imagined it would be easy to steal while they’re distracted. The next physical prototype needs to include some sort of security device to ease those worries.</p>
+            <h3>If we did it all again</h3>
+            <p>Overall, we believe this research process could have benefitted from a more thorough competitive analysis, or more research into technology that’s currently being used in shopping situations more generally. Additionally, we lacked strong evidence for making claims about our users because our sample sizes were small. Gathering more initial data through a survey would have given us a better picture of our target users, and would have served as a nice way to collect contact info for our future research methods.</p>
+            <hr>
+            <h4>Sources</h4>
+            <p>Jones, J. & Kashanchi, S. (August 20, 2019). Online Grocery Shopping Still Rare in U.S. Retrieved December 6, 2019, from <a href='https://news.gallup.com/poll/264857/online-grocery-shopping-rare.aspx' target='_blank'>https://news.gallup.com/poll/264857/online-grocery-shopping-rare.aspx</a></p>
+          </div>
+        </div>
+
       </div>
 
     </main>
