@@ -16,71 +16,83 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- sitewide styling -->
+    <link rel="stylesheet" type="text/css" href="styles/css/base.css">
+    <!-- page-specific styling -->
+    <link rel="stylesheet" type="text/css" href="styles/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/about.css">
 
-    <link rel = "stylesheet" type = "text/css" href = "main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <!-- Typefaces -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Add icon library -->
+    <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Jackson Hammond</title>
+    <title>About</title>
 
   </head>
   <body>
 
-    <div class="container">
-      <div class="myNavBar" id="myTopnav">
-        <a class="navbar-brand" aria-label="My Logo" href="index.html">
-          <img src="assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
+    <main role="main">
+      <!-- Navbar, courtesy of W3Schools -->
+      <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <div class="topnav" id="myTopnav">
+        <a class="navbar-brand" aria-label="My Logo" href="#">
+          <img src="assets/SVG/Logo_color.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
         </a>
         <a href="assets/Jackson_Hammond_Resume.pdf">RESUME</a>
-        <a href="About.html" class="active">ABOUT</a>
+        <a href="About.html">ABOUT</a>
         <a href="index.html">WORK</a>
-        <a href="javascript:void(0);" aria-label="Hamburger menu" class="icon" onclick="navBarHandling()">
+        <a href="javascript:void(0);" class="icon" onclick="navBarHandling()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
-    </div>
 
-    <main role="main">
-      <div class = "container about-me-margin">
+      <div class = "container">
+        <div class='row'>
+          <div class='project-title col-full'>
+            <h1 class='project-name'>Hi, I'm Jackson.</h1>
+            <h1 class='project-subtitle'>It's nice to meet you.</h1>
+          </div>
+        </div>
         <div class = "row">
-          <div class = "col-sm-6">
-            <p>Hi, I’m <span class="copy-emphasis">Jackson</span>, a designer who cares about <span class="copy-emphasis">the environment</span>, <span class="copy-emphasis">privacy</span>, and <span class="copy-emphasis">which book to read next.</span></p>
+          <div class = "col-half">
+            <p>I’m a designer who cares about the environment, privacy, and which book to read next.</p>
             <p>I’m currently working on my master’s in UX Research and Design at the University of Michigan's School of Information and searching for internships. I believe UX design is a way I can satisfy my desire to create beautiful things, make a positive impact on the world, and build experiences that bring people joy.</p>
 
             <p>Data visualization fascinates me, and you can often find me browsing <a href = "https://www.reddit.com/r/dataisbeautiful" target="_blank">r/dataisbeautiful</a>. I’m hoping to combine the design principles I’m learning with my technical background to find innovative ways to present complicated data to people.</p>
 
             <p>In my free time I like to get outside and stay active, read, cook, brew coffee, and practice drumset.</p>
-
           </div>
-          <div class = "col-sm-6">
-            <img src = "assets/Picture_of_me.jpg" class="image-width-eighty" alt="Portrait of myself">
+          <div class = "col-half">
+            <img src = "assets/Picture_of_me.jpg" style='max-height: 75vh; max-width: 100%;' alt="Picture of myself">
           </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="container">
-        <h6>Feel free to reach out if you want to connect or just say hi!</h6>
-        <a class="footer-email" href="mailto:jbhammon@umich.edu">jbhammon@umich.edu</a>
-        <div class="social-links">
-          <a href="https://github.com/jbhammon" target="_blank" class="fa fa-github" aria-label="My Github account"></a>
-          <a href="https://medium.com/@malts18" target="_blank" class="fa fa-medium" aria-label="My Medium account"></a>
-          <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target="_blank" class="fa fa-linkedin" aria-label="My LinkedIn account"></a>
+      <div class='containter'>
+        <div class='footer'>
+          <div class ='condensed-text-wrapper' style='margin-bottom: 2rem;'>
+            <p>Connect with me</p>
+            <p>
+              <a href="mailto:jbhammon@umich.edu">email.</a>
+              <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target='_blank'>linkedin.</a>
+              <a href="https://github.com/jbhammon" target='_blank'>github.</a>
+            </p>
+          </div>
+          <div class='copy-low-emphasis condensed-text-wrapper'>
+            <p>Built with ❤️ in Ann Arbor</p>
+            <p class="footer-copyright">&#169; 2019 Jackson Hammond</p>
+          </div>
         </div>
-        <small class="footer-copyright">Pulled up with Bootstrap 4 &#169; 2019 Jackson Hammond</small>
       </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--- My JavaScript --->
-    <script src="myscripts.js"></script>
+    <script src="../scripts/myscripts.js"></script>
 
   </body>
 </html>

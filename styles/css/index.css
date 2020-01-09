@@ -1,0 +1,16 @@
+.homepage-header {
+  margin-top: 7em;
+  margin-bottom: 7em;
+  text-align: left;
+  max-width: 40em;
+}
+.homepage-header p {
+  line-height: 1.6;
+}
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+.project-card-buffer {
+  margin-bottom: 30px;
+}
