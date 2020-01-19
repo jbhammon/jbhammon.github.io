@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130245877-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130245877-2');
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- sitewide styling -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/base.css">
+    <!-- page-specific styling -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/ai_internship.css">
+
+    <!-- Typefaces -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Michigan Online</title>
+
+  </head>
+
+  <body>
+
+    <main role="main">
+      <!-- Navbar, courtesy of W3Schools -->
+      <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <div class="topnav" id="myTopnav">
+        <a class="navbar-brand" aria-label="My Logo" href="../index.html">
+          <img src="../assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
+        </a>
+        <a href="../assets/Jackson_Hammond_Resume.pdf">RESUME</a>
+        <a href="../About.html">ABOUT</a>
+        <a href="../index.html">WORK</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarHandling()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class = "container">
+        <div class='row'>
+          <div class='project-title col-full'>
+            <h1 class='project-name'>Michigan Online</h1>
+            <h1 class='project-subtitle'>Designing and developing.</h1>
+          </div>
+          <div class='col-half'>
+            <div class='project-summary'>
+              <h3>Job Title</h3>
+              <p>User Experience Design Fellow</p>
+            </div>
+            <div class='project-summary'>
+              <h3>Responsibilities</h3>
+              <p>Improved the usability of existing AI tools and designed the experience of new products. Helped to conduct user research and assisted with UI design, rapid prototyping, and web-based tool development.</p>
+            </div>
+            <div class='project-summary'>
+              <h3>Timeframe</h3>
+              <p>May 2019 - Aug. 2019</p>
+            </div>
+          </div>
+          <div class='col-half'>
+            <img src='../assets/mapme/Branding_Guidelines.jpg' alt="MapMe Branding Guidelines">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="text-wrapper">
+            <p>Short paragraph about what AI is.</p>
+            <p>Short paragraph about Michigan Online specifically.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-wrapper">
+            <h2>Goals for the Summer</h2>
+            <p>List of my goals. Double check that the work I highlight later shows I met each of these goals.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-wrapper">
+            <h2>Large Project: New Degree Details Page</h2>
+            <p>Developed the new Degree Details page for Michigan Online</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-wrapper">
+            <h2>Small Project: Learner Progress Cards</h2>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-wrapper">
+            <h2>Small Project: Heuristic Evaluation</h2>
+            <p>When I started my position at AI I completed a heuristic evaluation of the Michigan Online website to become acquainted with the site’s functionality, flow, and visual identity. A few months prior the site had published a large visual redesign, and my manager wanted a fresh set of eyes to find any potential usability issues the team had missed. </p>
+            <p>Spreadsheet screenshot</p>
+            <p>I evaluated the website using Nielsen’s 10 Usability Heuristics and tracked each violation I found. I recorded the heuristic violated, its severity, and a potential fix for each instance, and noted the “Match between the system and the real world” and “Consistency and standards” heuristics were violated most often. I presented my top findings to the rest of the Michigan Online team and outlined them below.</p>
+
+            <h3>Confusing Call-to-Action Buttons</h3>
+            <p><span style='font-weight: bold;'>Heuristic: </span>Consistency and standards</p>
+            <p><span style='font-weight: bold;'>Violation: </span>The "Start" call-to-action button for “Teach Out” learning experiences doesn't act the same as CTA buttons on other course pages. Clicking the “Start” button doesn’t currently start anything for users. CTA buttons on the other course pages take users to new pages, windows, or websites. From the “Overview” section clicking it will take users to the “Lessons” section. Clicking from the “Lessons” section doesn’t seem to do anything.</p>
+            <p>Screenshot</p>
+            <p><span style='font-weight: bold;'>Potential Fix: </span>Scrolling the user down the page to the top of the list of lessons could help give users a better sense they're "starting" something.</p>
+
+            <h3>Unclear Course Ratings</h3>
+            <p><span style='font-weight: bold;'>Heuristic: </span>Match between system and the real world</p>
+            <p><span style='font-weight: bold;'>Violation: </span>There’s little transparency for a course’s ratings, but users are probably used to having that information from their other online experiences. The number of individual ratings for a course is not displayed, and there is no breakdown of how the overall rating is calculated. Users also have no control over the reviews they’re shown; it’s a fixed part of the screen.</p>
+            <p>Screenshots</p>
+            <p><span style='font-weight: bold;'>Potential Fix: </span>Include the total count of ratings in parentheses after the average star rating. Also, allow users to have control over the reviews they see. Give them links for "Next 5" and "Previous 5" reviews, for example.</p>
+
+            <h3>Ambiguous Class Attributes</h3>
+            <p><span style='font-weight: bold;'>Heuristic: </span>Match between system and the real world</p>
+            <p><span style='font-weight: bold;'>Violation: </span>Students might not understand what the attribute "Status" means on a course or series page. A “status” of “available” doesn’t map to anything used to describe a typical in-person class students would register for.</p>
+            <p>Screenshots</p>
+            <p><span style='font-weight: bold;'>Potential Fix: </span>Using a word like "Enrollment" might work better than "Status". Options below it could be "open", "closed", "rolling", "starting soon", etc. MOOCs aren’t very similar to typical college courses, but it would still be worth exploring other terminology that is more typically associated with classes.</p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-wrapper">
+            <h2>Small Project: Partner Offering Page</h2>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-wrapper">
+            <h2>Reflection</h2>
+            <p></p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class='containter'>
+        <div class='footer'>
+          <div class ='condensed-text-wrapper' style='margin-bottom: 2rem;'>
+            <p>Connect with me</p>
+            <p>
+              <a href="mailto:jbhammon@umich.edu">email.</a>
+              <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target='_blank'>linkedin.</a>
+              <a href="https://github.com/jbhammon" target='_blank'>github.</a>
+            </p>
+          </div>
+          <div class='copy-low-emphasis condensed-text-wrapper'>
+            <p>Built with ❤️ in Ann Arbor</p>
+            <p class="footer-copyright">&#169; 2019 Jackson Hammond</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--- My JavaScript --->
+    <script src="../scripts/myscripts.js"></script>
+
+  </body>
+</html>
