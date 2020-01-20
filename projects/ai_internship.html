@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class='col-half'>
-            <img src='../assets/mapme/Branding_Guidelines.jpg' alt="MapMe Branding Guidelines">
+            <img class='screenshot' src='../assets/ai_internship/MO homepage.png' alt="MO Homepage">
           </div>
         </div>
       </div>
@@ -78,17 +78,23 @@
       <div class="container">
         <div class="row">
           <div class="text-wrapper">
-            <p>Short paragraph about what AI is.</p>
-            <p>Short paragraph about Michigan Online specifically.</p>
+            <p>The University of Michigan's <a href='https://ai.umich.edu/' target='_blank'>Center for Academic Innovation</a> is a organization that strives to make world-class education available to anyone who desires it. They use design, research, expertise, and technology to bring better learning experiences to larger audiences than ever before, and I served as a <span style='font-weight: bold;'>UX Design Fellow </span> to design and develop new experiences.</p>
+            <p>One of those tools that AI has created is <a href='https://online.umich.edu/' target='_blank'>Michigan Online</a>, and it served as my main area of focus. Michigan Online strives to make the world-class educational opportunities from the University of Michigan available to the full U-M community and help learners connect during their educational journeys. </p>
           </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="text-wrapper">
             <h2>Goals for the Summer</h2>
-            <p>List of my goals. Double check that the work I highlight later shows I met each of these goals.</p>
+            <p>I had four goals I wanted to accomplish during my summer with Academic Innovation.</p>
+            <ol>
+              <li>Practice presenting designs to a variety of stakeholders</li>
+              <li>Design collaboratively with other designers and developers on projects</li>
+              <li>Become more familiar with how UX Designers fit into the typical web development life cycle</li>
+              <li>Improve my front-end web development skills</li>
+            </ol>
           </div>
-        </div>
+        </div> -->
 
         <div class="row">
           <div class="text-wrapper">
@@ -100,7 +106,7 @@
         <div class="row">
           <div class="text-wrapper">
             <h2>Small Project: Learner Progress Cards</h2>
-            <p></p>
+            <p>Info about cards</p>
           </div>
         </div>
 
@@ -108,25 +114,25 @@
           <div class="text-wrapper">
             <h2>Small Project: Heuristic Evaluation</h2>
             <p>When I started my position at AI I completed a heuristic evaluation of the Michigan Online website to become acquainted with the site’s functionality, flow, and visual identity. A few months prior the site had published a large visual redesign, and my manager wanted a fresh set of eyes to find any potential usability issues the team had missed. </p>
-            <p>Spreadsheet screenshot</p>
+            <img class='screenshot' src='../assets/ai_internship/heuristic_eval_notes.png' alt='Spreadsheet of results from the heuristic evaluation'>
             <p>I evaluated the website using Nielsen’s 10 Usability Heuristics and tracked each violation I found. I recorded the heuristic violated, its severity, and a potential fix for each instance, and noted the “Match between the system and the real world” and “Consistency and standards” heuristics were violated most often. I presented my top findings to the rest of the Michigan Online team and outlined them below.</p>
 
             <h3>Confusing Call-to-Action Buttons</h3>
             <p><span style='font-weight: bold;'>Heuristic: </span>Consistency and standards</p>
             <p><span style='font-weight: bold;'>Violation: </span>The "Start" call-to-action button for “Teach Out” learning experiences doesn't act the same as CTA buttons on other course pages. Clicking the “Start” button doesn’t currently start anything for users. CTA buttons on the other course pages take users to new pages, windows, or websites. From the “Overview” section clicking it will take users to the “Lessons” section. Clicking from the “Lessons” section doesn’t seem to do anything.</p>
-            <p>Screenshot</p>
+            <img class='screenshot' src='../assets/ai_internship/heuristic_eval_1.png' alt='Call to action button screenshot'>
             <p><span style='font-weight: bold;'>Potential Fix: </span>Scrolling the user down the page to the top of the list of lessons could help give users a better sense they're "starting" something.</p>
 
             <h3>Unclear Course Ratings</h3>
             <p><span style='font-weight: bold;'>Heuristic: </span>Match between system and the real world</p>
             <p><span style='font-weight: bold;'>Violation: </span>There’s little transparency for a course’s ratings, but users are probably used to having that information from their other online experiences. The number of individual ratings for a course is not displayed, and there is no breakdown of how the overall rating is calculated. Users also have no control over the reviews they’re shown; it’s a fixed part of the screen.</p>
-            <p>Screenshots</p>
+            <img class='screenshot' src='../assets/ai_internship/heuristic_eval_2.png' alt="Comparison between MO's ratings and Amazon's ratings">
             <p><span style='font-weight: bold;'>Potential Fix: </span>Include the total count of ratings in parentheses after the average star rating. Also, allow users to have control over the reviews they see. Give them links for "Next 5" and "Previous 5" reviews, for example.</p>
 
             <h3>Ambiguous Class Attributes</h3>
+            <img class='screenshot' src='../assets/ai_internship/heuristic_eval_3.png' alt='Course attributes screenshot' style='float: right; max-height: 75vh'>
             <p><span style='font-weight: bold;'>Heuristic: </span>Match between system and the real world</p>
             <p><span style='font-weight: bold;'>Violation: </span>Students might not understand what the attribute "Status" means on a course or series page. A “status” of “available” doesn’t map to anything used to describe a typical in-person class students would register for.</p>
-            <p>Screenshots</p>
             <p><span style='font-weight: bold;'>Potential Fix: </span>Using a word like "Enrollment" might work better than "Status". Options below it could be "open", "closed", "rolling", "starting soon", etc. MOOCs aren’t very similar to typical college courses, but it would still be worth exploring other terminology that is more typically associated with classes.</p>
 
           </div>
@@ -135,14 +141,22 @@
         <div class="row">
           <div class="text-wrapper">
             <h2>Small Project: Partner Offering Page</h2>
-            <p></p>
+            <p>Michigan Online isn't the only online source for learning content created across U-M's various campuses, and we needed to create a new page to advertise content from those other partners. I was given high-fidelity prototypes of a new "Partner Offerings" page and tasked with developing the new webpage. Using a combination of existing HTML and CSS assests developed by the MO team and new assets I developed myself I replicated the designs and presented my work to the Michigan Online team.</p>
+            <p>My development work used a hard-coded list of partner cards, but our solution needed to update dynamically. I worked with a software developer fellow to replace my hard-coded list with a templated solution that the Django back-end could populate. Based on my front-end work she was able to update the Django data model to include the data I needed, and we worked together to integrate everything in the HTML template. Check out the <a href='https://online.umich.edu/partner-offerings/' target ='_blank'>Partner Offering page here!</a></p>
+            <img class='screenshot' src='../assets/ai_internship/partner_offerings.png' alt="Partner offerings page">
           </div>
         </div>
 
         <div class="row">
           <div class="text-wrapper">
             <h2>Reflection</h2>
-            <p></p>
+            <p>Working with U-M's Center for Academic Innovation certainly improved my design and development skills. Reflecting on my experiences there are four key things I learned.</p>
+            <ol>
+              <li>How to incorporate feedback into my designs from a wide range of stakeholders</li>
+              <li>How to present my design work to stakeholders without a design background</li>
+              <li>Designing to match someone else’s visual identity guidelines is more difficult than matching guidelines I created</li>
+              <li>Best practices for web development of a large scale web site, and how UX Designers fit into development cycles</li>
+            </ol>
           </div>
         </div>
 
