@@ -90,6 +90,13 @@ p {
   margin-right: -15px;
 }
 
+.col-quarter {
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
 .col-half {
   @media only screen and (min-width: 768px) {
     flex: 0 0 50%;
@@ -97,7 +104,7 @@ p {
   }
 }
 
-.col-half, .col-full {
+.col-quarter, .col-half, .col-full {
   position: relative;
   width: 100%;
   min-height: 1px;
