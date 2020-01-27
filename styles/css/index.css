@@ -10,6 +10,11 @@
 .thumbnail {
   max-width: 100%;
   height: auto;
+  transition: translate 0.5s;
+}
+.thumbnail:hover {
+  opacity: 0.6;
+  translate: 0px -10px;
 }
 .project-card-buffer {
   margin-bottom: 30px;
