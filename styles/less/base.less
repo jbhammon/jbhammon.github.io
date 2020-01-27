@@ -97,6 +97,13 @@ p {
   }
 }
 
+.col-third {
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+
 .col-half {
   @media only screen and (min-width: 768px) {
     flex: 0 0 50%;
@@ -104,7 +111,7 @@ p {
   }
 }
 
-.col-quarter, .col-half, .col-full {
+.col-quarter, .col-third, .col-half, .col-full {
   position: relative;
   width: 100%;
   min-height: 1px;
