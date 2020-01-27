@@ -80,11 +80,25 @@ p {
   margin-right: -15px;
 }
 @media only screen and (min-width: 768px) {
+  .col-quarter {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-third {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+@media only screen and (min-width: 768px) {
   .col-half {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
+.col-quarter,
+.col-third,
 .col-half,
 .col-full {
   position: relative;
