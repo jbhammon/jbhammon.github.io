@@ -2,13 +2,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-family: objektiv-mk2, sans-serif;
+  font-style: normal;
   font-weight: 500;
   color: #313131;
   font-size: 100%;
 }
 p {
-  line-height: 1.6;
+  line-height: 1.8;
 }
 /* Add a black background color to the top navigation */
 .topnav {
