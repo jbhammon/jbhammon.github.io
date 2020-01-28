@@ -5,13 +5,6 @@ li {
   line-height: 1.6;
 }
 .project-title {
-  margin: 3rem auto;
-}
-.project-title h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.project-name {
   font-size: 3em;
 }
 .project-subtitle {
