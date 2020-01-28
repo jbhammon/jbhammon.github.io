@@ -1,7 +1,9 @@
 h1,
 h2,
 h3,
-a {
+a,
+.project-title,
+.project-subtitle {
   color: #00274C;
 }
 .screenshot {
