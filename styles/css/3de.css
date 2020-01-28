@@ -1,7 +1,9 @@
 h1,
 h2,
 h3,
-a {
+a,
+.project-title,
+.project-subtitle {
   color: #FF404F;
 }
 .side-by-side {
