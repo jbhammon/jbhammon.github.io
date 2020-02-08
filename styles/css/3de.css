@@ -6,6 +6,9 @@ a,
 .project-subtitle {
   color: #FF404F;
 }
+.top-button {
+  background-color: #FF404F;
+}
 .side-by-side {
   display: flex;
   justify-content: space-between;

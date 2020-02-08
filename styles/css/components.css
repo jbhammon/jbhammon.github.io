@@ -1,0 +1,21 @@
+.top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #673AB7;
+  color: white;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  font-family: objektiv-mk2, sans-serif;
+}
+.top-button:hover {
+  background-color: #787878;
+}
