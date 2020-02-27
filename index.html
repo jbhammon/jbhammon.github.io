@@ -18,6 +18,7 @@
 
     <!-- sitewide styling -->
     <link rel="stylesheet" type="text/css" href="styles/css/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/components.css">
     <!-- page-specific styling -->
     <link rel="stylesheet" type="text/css" href="styles/css/index.css">
 
@@ -53,14 +54,10 @@
           <p>I focus on how technology can deliver better information to improve people's lives and communities. I'm currently a master's student at the University of Michigan, and I'm searching for full-time positions.</p>
         </div>
 
-        <div class='row'>
+        <div class='row margin-bottom-2'>
           <div class='col-full'>
-            <button onclick='openDesign(event);'>
-              Design
-            </button>
-            <button onclick='openDev(event);'>
-              Development
-            </button>
+            <span id='design-tab' class='underline active-tab' onclick='openDesign(event);'>Design</span>
+            <span id='dev-tab' class='underline' onclick='openDev(event);'>Development</span>
           </div>
         </div>
 
@@ -90,7 +87,7 @@
         <div class='row' id='dev-work' style='display: none;'>
           <div class='col-half project-card-buffer'>
             <a href='projects/GoodListens.html'>
-              <img class='thumbnail' src='assets/Thumbnails/mapme thumbnail.png'>
+              <img class='thumbnail' src='assets/Thumbnails/goodlistens thumbnail.png'>
             </a>
           </div>
         </div>

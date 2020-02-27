@@ -24,3 +24,30 @@
 .top-button:hover {
   background-color: @dark-grey;
 }
+
+.underline {
+  position: relative;
+  margin: 3px;
+  color: @light-grey;
+  &:hover {
+   cursor: pointer;
+   color: @copy;
+   &:after {
+      width: 100%;
+  }
+}
+
+&:after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -7px;
+    height: 4px;
+    background-color: @copy;
+    width: 0;
+    transition: width .25s;
+  }
+}
+
+.active-tab {
+  color: @copy;
+}

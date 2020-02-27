@@ -19,3 +19,28 @@
 .top-button:hover {
   background-color: #787878;
 }
+.underline {
+  position: relative;
+  margin: 3px;
+  color: #A9A9A9;
+}
+.underline:hover {
+  cursor: pointer;
+  color: #313131;
+}
+.underline:hover:after {
+  width: 100%;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 4px;
+  background-color: #313131;
+  width: 0;
+  transition: width 0.25s;
+}
+.active-tab {
+  color: #313131;
+}
