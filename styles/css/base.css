@@ -101,9 +101,16 @@ p {
     max-width: 50%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .col-two-thirds {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+}
 .col-quarter,
 .col-third,
 .col-half,
+.col-two-thirds,
 .col-full {
   position: relative;
   width: 100%;

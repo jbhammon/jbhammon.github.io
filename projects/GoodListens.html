@@ -102,41 +102,36 @@
           <div class='text-wrapper'>
             <h2>Development Process</h2>
             <p>We chose to implement the user interface with React Native and stored all the necessary data in a noSQL database powered by Google’s Firebase. My three-person group had less than three weeks to design, implement, and present this mobile app for our final project. This forced us to make quick decisions and prioritize only the necessary features that would give users the experience we wanted.</p>
-            <table>
-              <tr>
-                <td>Following other users in the app</td>
-                <td>Save favorite episodes</td>
-              </tr>
-              <tr>
-                <td>Create a chronological feed of listening data</td>
-                <td>Play episodes within the app</td>
-              </tr>
-              <tr>
-                <td>Browse podcasts</td>
-                <td>Display podcast thumbnail artwork</td>
-              </tr>
-              <tr>
-                <td>Create user's Podcast Library</td>
-                <td>Pull to refresh listening feed</td>
-              </tr>
-              <tr>
-                <td>Track the podcast episodes users listen to</td>
-                <td>Tracking and displaying total listening time</td>
-              </tr>
-              <tr>
-                <td>User episode ratings</td>
-                <td></td>
-              </tr>
-            </table>
+            <ol style='columns: 2; column-gap: 50px;'>
+              <li>Following other users in the app</li>
+              <li>Create a chronological feed of user listening activity</li>
+              <li>Browse podcasts</li>
+              <li>Create user's Podcast Library</li>
+              <li>Track the podcast episodes users listen to</li>
+              <li>User episode ratings</li>
+              <li>Save favorite episodes</li>
+              <li>Stream episodes within the app</li>
+              <li>Display podcast thumbnail artwork</li>
+              <li>Pull to refresh listening feed</li>
+              <li>Tracking and displaying total listening time</li>
+            </ol>
           </div>
         </div>
 
-        <div class='row margin-bottom-4'>
-          <div class='text-wrapper'>
+        <div class='row margin-bottom-2'>
+          <div class='col-third'>
             <p>With our feature list in hand we used Adobe XD to collaboratively design rough mockups to agree on the screens our app would need.</p>
-            <img src='../assets/goodlistens/mockups.png'>
+          </div>
+          <div class='col-two-thirds'>
+            <img src='../assets/goodlistens/mockups.png' alt='Screen flow from our XD mockups'>
+          </div>
+        </div>
+        <div class='row margin-bottom-4'>
+          <div class='col-two-thirds'>
+            <img src='../assets/goodlistens/db_structure.png' alt='Sketch of the initial database structure'>
+          </div>
+          <div class='col-third'>
             <p>The mockups helped us sketch out an initial structure for our database.</p>
-            <p>Database sketch here</p>
           </div>
         </div>
 
@@ -152,42 +147,34 @@
           <div class='text-wrapper'>
             <h2>Results</h2>
             <p>At the end of the project our group was able to create a React Native mobile app that was deployed using Expo. We managed to implement all but one of the features we prioritized.</p>
-            <table>
-              <tr>
-                <th>Complete</th>
-                <th>Partial</th>
-                <th>Incomplete</th>
-              </tr>
-              <tr>
-                <td>Following other users in the app</td>
-                <td>Browse podcasts</td>
-                <td>Tracking and displaying total listening time</td>
-              </tr>
-              <tr>
-                <td>Create a chronological feed of listening data</td>
-              </tr>
-              <tr>
-                <td>Create the user's Podcast Library</td>
-              </tr>
-              <tr>
-                <td>Track the podcast episodes users listen to</td>
-              </tr>
-              <tr>
-                <td>User episode ratings</td>
-              </tr>
-              <tr>
-                <td>Save favorite episodes</td>
-              </tr>
-              <tr>
-                <td>Play episodes in the app</td>
-              </tr>
-              <tr>
-                <td>Display podcast thumbnail artwork</td>
-              </tr>
-              <tr>
-                <td>Pull to refresh listening feed</td>
-              </tr>
-            </table>
+            <div class='features-table'>
+              <div class='feature-column'>
+                <p><span class='feature-complete'>Complete</span></p>
+                <ul>
+                  <li>Following other users in the app</li>
+                  <li>Create a chronological feed of user listening activity</li>
+                  <li>Create the user's Podcast Library</li>
+                  <li>Track the podcast episodes users listen to</li>
+                  <li>User episode ratings</li>
+                  <li>Save favorite episodes</li>
+                  <li>Stream episodes in the app</li>
+                  <li>Display podcast thumbnail artwork</li>
+                  <li>Pull to refresh listening feed</li>
+                </ul>
+              </div>
+              <div class='feature-column'>
+                <p><span class='feature-partial'>Partial</span></p>
+                <ul>
+                  <li>Browse podcasts</li>
+                </ul>
+              </div>
+              <div class='feature-column'>
+                <p><span class='feature-incomplete'>Incomplete</span></p>
+                <ul>
+                  <li>Tracking and displaying total listening time</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 

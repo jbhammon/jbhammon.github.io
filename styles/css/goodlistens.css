@@ -9,3 +9,26 @@ a,
 .top-button {
   background-color: #585858;
 }
+.features-table {
+  width: 100%;
+  display: flex;
+}
+.feature-column {
+  width: 33%;
+}
+.feature-column ul {
+  list-style-type: none;
+  padding: 0 0.5rem 0 0;
+}
+.feature-complete {
+  background-color: #23E893;
+  padding: 0.25rem 1rem;
+}
+.feature-partial {
+  background-color: #FFE54B;
+  padding: 0.25rem 1rem;
+}
+.feature-incomplete {
+  background-color: #FF9179;
+  padding: 0.25rem 1rem;
+}
