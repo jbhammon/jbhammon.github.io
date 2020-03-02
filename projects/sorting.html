@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130245877-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130245877-2');
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- sitewide styling -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/components.css">
+    <!-- page-specific styling -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/sorting.css">
+
+    <!-- Typefaces -->
+    <link rel="stylesheet" href="https://use.typekit.net/faz2ajf.css">
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Seeing Sorting</title>
+
+  </head>
+
+  <body>
+
+    <main role="main">
+      <!-- Navbar, courtesy of W3Schools -->
+      <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <div class="topnav" id="myTopnav">
+        <a class="navbar-brand" aria-label="My Logo" href="../index.html">
+          <img src="../assets/SVG/Logo.svg" width="45" height="45" class="d-inline-block align-top" alt="My Logo">
+        </a>
+        <a href="../assets/Jackson_Hammond_Resume.pdf">RESUME</a>
+        <a href="../About.html">ABOUT</a>
+        <a href="../index.html">WORK</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarHandling()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <button onclick="goBackToTop()" class='top-button' title="Back to top">Back to top</button>
+
+      <div class = "container">
+        <div class='row margin-top-4 margin-bottom-8'>
+          <div class='col-half'>
+            <div class='project-title'>GoodListens</div>
+            <div class='project-subtitle'>Make sense of the noise.</div>
+          </div>
+          <div class='col-half'>
+            <p>A dashboard to help new computer science students learn the complexities of sorting algorithms.</p>
+            <div class='project-details'>
+              <p>Dashboard Designer and Developer</p>
+              <p>Chart.js / Bootstrap</p>
+              <p>Oct. 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+      </div>
+
+    </main>
+
+    <footer>
+      <div class='containter'>
+        <div class='footer'>
+          <div class ='condensed-text-wrapper' style='margin-bottom: 2rem;'>
+            <p>Connect with me</p>
+            <p>
+              <a href="mailto:jbhammon@umich.edu">email.</a>
+              <a href="https://www.linkedin.com/in/jackson-hammond-b428a481/" target='_blank'>linkedin.</a>
+              <a href="https://github.com/jbhammon" target='_blank'>github.</a>
+            </p>
+          </div>
+          <div class='copy-low-emphasis condensed-text-wrapper'>
+            <p>Built with ❤️ in Ann Arbor</p>
+            <p class="footer-copyright">&#169; 2019 Jackson Hammond</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--- My JavaScript --->
+    <script src="../scripts/myscripts.js"></script>
+    <script src="../scripts/backToTop.js"></script>
+
+  </body>
+</html>
