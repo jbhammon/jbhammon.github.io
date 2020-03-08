@@ -55,8 +55,8 @@
       <div class = "container">
         <div class='row margin-top-4 margin-bottom-8'>
           <div class='col-half'>
-            <div class='project-title'>GoodListens</div>
-            <div class='project-subtitle'>Make sense of the noise.</div>
+            <div class='project-title'>Seeing Sorting</div>
+            <div class='project-subtitle'>A learning dashboard for CS students.</div>
           </div>
           <div class='col-half'>
             <p>A dashboard to help new computer science students learn the complexities of sorting algorithms.</p>
@@ -70,6 +70,60 @@
       </div>
 
       <div class="container">
+
+        <div class='row margin-bottom-4'>
+          <div class='col-full'>
+            <img src='../assets/seeing_sorting/banner_image.png' alt='Screenshot of the dashboard on mac book mockup'>
+          </div>
+        </div>
+
+        <div class='row margin-bottom-4'>
+          <div class='text-wrapper'>
+            <p>Learning sorting algorithms, such as <a href='https://en.wikipedia.org/wiki/Merge_sort' target='_blank'>Merge Sort</a> and <a href='https://en.wikipedia.org/wiki/Quicksort' target='_blank'>Quicksort</a>, is something many new computer science students need to accomplish. I wanted to design and build this interactive dashboard to help them better visualize the differences between several popular algorithms to make their studies more engaging.</p>
+            <p>I used an existing Javascript sorting engine to drive the data processing for this project (<a href='sorting/index.html#sources' target='_blank'>see sources</a>), but user interaction was extremely limited in its original implementation. I kept all the logic for sorting and tracking the sort steps, but replaced all the charting and interactive elements using Bootstrap 4 and Chart.js.</p>
+          </div>
+        </div>
+
+        <div class='row margin-bottom-4'>
+          <div class='text-wrapper'>
+            <h2>Learning Objectives</h2>
+            <p>With the help of this dashboard, students will be able to:</p>
+            <ol>
+              <li>Compare the performance of different algorithms on different initial conditions.</li>
+              <li>Discuss how to implement sorting algorithms, regardless of programming language.</li>
+              <li>Identify situations when certain algorithms are ideal or not ideal for sorting.</li>
+          </div>
+        </div>
+
+        <div class='row margin-bottom-4'>
+          <div class='text-wrapper'>
+            <h2>Sketches and Mockups</h2>
+            <p>three paper sketches</p>
+            <img src='../assets/seeing_sorting/mockup.jpg' alt='Mockup created with Adobe XD after te initial sketches'>
+          </div>
+        </div>
+
+        <div class='row margin-bottom-4'>
+          <div class='text-wrapper'>
+            <h2>Final Product</h2>
+            <h4>Top Section – Algorithm Details</h4>
+            <p>Students can choose an algorithm to read an explanation of how it works and study its pseudo code. On the right they can configure an array and click “Sort” to watch it be performed and watch as the number of swaps the algorithm makes is displayed on the line chart below.</p>
+            <img src='../assets/seeing_sorting/top_half.png' alt='top half of the dashboard'>
+            <h4>Bottom Section – Compare Algorithm Performance</h4>
+            <p>Students pick two algorithms to compare, then they’re able to watch how they stack up against each other.</p>
+            <img src='../assets/seeing_sorting/bottom_half.png' alt='bottom half of the dashboard'>
+          </div>
+        </div>
+
+        <div class='row margin-bottom-4'>
+          <div class='text-wrapper'>
+            <h2>How the Dashboard Helps Students</h2>
+            <p>A challenge with learning these sorting algorithms is relating their pseudo code and “Big O” notation to how the array elements are moved by the code. This solution allows students to view the pseudo code of an algorithm alongside a demo of it being performed, and addresses learning objectives 1 and 2.</p>
+            <p>The two bar charts and line charts at the bottom lets students compare algorithm performance side by side and helps show when one outperforms another, which addresses learning objective 3.</p>
+            <p>Using bar charts for this sorting visualization is most appropriate because it’s simple to encode size and position, which are literally two data attributes that students are concerned about. The size of a bar encodes the “size” of an element in the array. The position of a bar along the x axis encodes the “position” of an element in the array. Color also encodes which objects are being compared and if they are swapped, because that is key to gaining a better understanding of the algorithms. Pairs of bars will change to purple if they’re being compared and change to green if they are swapped.</p>
+            <p>This encoding scheme gives the visualizations great expressiveness by showing users the size and position of elements at a given iteration, as well as showing which operations the algorithm is performing. It’s highly effective because the colors help the user follow the algorithms process, and the size and position of elements reflect the current state of the array at any given iteration.</p>
+          </div>
+        </div>
 
       </div>
 
