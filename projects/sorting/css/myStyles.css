@@ -12,6 +12,22 @@ code {
   text-align: left;
 }
 
+p {
+  line-height: 1.6;
+}
+
+.header-text-wrapper {
+  max-width: 500px;
+  text-align: left;
+  margin: 4rem auto;
+}
+
+.footer-text-wrapper {
+  max-width: 750px;
+  text-align: left;
+  margin: 4rem auto 0 auto;
+}
+
 .algorithmInputs {
   display: flex;
   justify-content: space-between;

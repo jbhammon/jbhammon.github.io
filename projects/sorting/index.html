@@ -29,27 +29,31 @@
   </head>
   <body>
     <div class="container">
-      <h1>Seeing Sorting</h1>
-      <h2>Algorithm Investigation</h2>
-      <p>Choose an algorithm below to learn more about how it works, see its pseudo code, and watch it sort an array step by step.</p>
-      <p>Elements being compared are <span style="color: #7156FF;"><b>purple</b></span>, and elements being swapped are <span style="color: #34CC31;"><b>green</b></span>.</p>
-      <label for='#algo-select'>Algorithm</label>
-      <select class='form-control' id='algo-select' onchange='algoChange()'>
-        <option value='bubblesort'>Bubble sort</option>
-        <option value='selectionsort'>Selection sort</option>
-        <option value='insertionsort'>Insertion sort</option>
-        <option value='odd_even_sort'>Odd-even sort</option>
-        <option value='cocktail_sort'>Cocktail sort</option>
-        <option value='quicksort'>Quicksort</option>
-        <option value='heapsort'>Heapsort</option>
-        <option value='mergesort'>Merge sort</option>
-        <option value='introsort'>Introsort</option>
-      </select>
+      <div class='header-text-wrapper'>
+        <h1 >Seeing Sorting</h1>
+        <p>Learning sorting is hard. The algorithms and their Big-O notation take lots of practice to understand, but all new CS students need to learn them. It's like eating your vegetables 🥕🥦🌽🥬</p>
+        <p>Use this tool to help with those studies. It uses bar charts to illustrate data arrays as they're being sorted. Array elements that are being compared are <span style="color: #7156FF;"><b>purple</b></span>, and elements being swapped are <span style="color: #34CC31;"><b>green</b></span>. The line charts help show both the time and the cost an algorithm takes to sort an array.</p>
+      </div>
+
+      <div class="header-text-wrapper">
+        <h2>Details of an Algorithm</h2>
+        <p>Choose an algorithm below to read more about how it works, view its pseudo code, and watch it sort an array step by step.</p>
+        <!-- <label for='#algo-select'>Algorithm</label> -->
+        <select class='form-control' id='algo-select' onchange='algoChange()'>
+          <option value='bubblesort'>Bubble sort</option>
+          <option value='selectionsort'>Selection sort</option>
+          <option value='insertionsort'>Insertion sort</option>
+          <option value='odd_even_sort'>Odd-even sort</option>
+          <option value='cocktail_sort'>Cocktail sort</option>
+          <option value='quicksort'>Quicksort</option>
+          <option value='heapsort'>Heapsort</option>
+          <option value='mergesort'>Merge sort</option>
+          <option value='introsort'>Introsort</option>
+        </select>
+      </div>
       <div class="row">
         <div class="column">
-          <h4>Explanation</h4>
           <p id='english-copy'></p>
-          <h4>Pseudo code</h4>
           <pre><code style=display:block;white-space:pre-wrap id='pseudocode-copy'></code></pre>
           <p><a href='' target="_blank" id='source-link'>Read More</a></p>
         </div>
@@ -97,11 +101,13 @@
         </div>
       </div>
 
-      <h2>Algorithm Comparison</h2>
-      <p>Choose two algorithms below and click "Compare" to watch how their performance compares to one another. Once they're both completed click "Reset" to shuffle the arrays and start again.</p>
-      <div>
-        <button id='startRace'>Compare</button>
-        <button id='resetRace'>Reset</button>
+      <div class='header-text-wrapper'>
+        <h2>Algorithm Comparison</h2>
+        <p>Choose two algorithms below and click "Compare" to watch how their performance compares to one another. Once they're both completed click "Reset" to shuffle the arrays and start again.</p>
+        <div>
+          <button id='startRace'>Compare</button>
+          <button id='resetRace'>Reset</button>
+        </div>
       </div>
 
       <div class="row">
@@ -169,30 +175,32 @@
           <canvas id="shared-line-chart"></canvas>
         </div>
       </div>
-      <h3>Author Info</h3>
-      <p>Created and Designed by Jackson Hammond, SI 649 Individual Project Fall 2019.
-      <h4 id='sources'>Sources and Citations</h4>
-      <div style='font-size: 0.75rem;'>
-        <p>All the sources I collected code and other information from are listed below for reference.</p>
-        <p>I borrowed much of javascript code that handles the actual sorting of the arrays from Justin Johnson. His "AnimatedArray" object and subsequent sorting code is what drives much of the background computation for this project. See citations below for more information.</p>
-        <ul>
-          <li>index.html. <i>sorting.js</i>, commit d8d7a1a30c00fde2456acc1063d5e22929378681, Justin Johnson, 2015. <i>GitHub</i>, https://github.com/jcjohnson/sorting.js/blob/master/index.html</li>
-          <li>sorting.js. <i>sorting.js</i>, commit d8d7a1a30c00fde2456acc1063d5e22929378681, Justin Johnson, 2015. <i>GitHub</i>, https://github.com/jcjohnson/sorting.js/blob/master/js/sorting.js</li>
-        </ul>
-        <p>Below is a formal listing of sources for all the sorting code explanations and pseudocode.</p>
-        <ul>
-          <li>"Bubble sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Bubble_sort. Accessed 2 November 2019. </li>
-          <li>"Selection sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Selection_sort. Accessed 2 November 2019. </li>
-          <li>"Data Structure and Algorithms Selection Sort." <i>TutorialsPoint</i>, https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm. Accessed 2 November 2019. </li>
-          <li>"Insertion sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Insertion_sort. Accessed 2 November 2019. </li>
-          <li>"Odd-even sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort. Accessed 2 November 2019. </li>
-          <li>"Cocktail shaker sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Cocktail_shaker_sort. Accessed 2 November 2019. </li>
-          <li>"Quicksort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Quicksort. Accessed 2 November 2019. </li>
-          <li>"Heapsort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Heapsort. Accessed 2 November 2019. </li>
-          <li>"Merge sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Merge_sort. Accessed 2 November 2019. </li>
-          <li>"Data Structures - Merge Sort Algorithm." <i>TutorialsPoint</i>, https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm. Accessed 2 November 2019. </li>
-          <li>"Introsort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Introsort. Accessed 2 November 2019. </li>
-        </ul>
+      <div class='footer-text-wrapper'>
+        <h3>Author Info</h3>
+        <p>Created and Designed by Jackson Hammond, SI 649 Individual Project Fall 2019.
+        <h4 id='sources'>Sources and Citations</h4>
+        <div style='font-size: 0.75rem;'>
+          <p>All the sources I collected code and other information from are listed below for reference.</p>
+          <p>I borrowed much of javascript code that handles the actual sorting of the arrays from Justin Johnson. His "AnimatedArray" object and subsequent sorting code is what drives much of the background computation for this project. See citations below for more information.</p>
+          <ul>
+            <li>index.html. <i>sorting.js</i>, commit d8d7a1a30c00fde2456acc1063d5e22929378681, Justin Johnson, 2015. <i>GitHub</i>, https://github.com/jcjohnson/sorting.js/blob/master/index.html</li>
+            <li>sorting.js. <i>sorting.js</i>, commit d8d7a1a30c00fde2456acc1063d5e22929378681, Justin Johnson, 2015. <i>GitHub</i>, https://github.com/jcjohnson/sorting.js/blob/master/js/sorting.js</li>
+          </ul>
+          <p>Below is a formal listing of sources for all the sorting code explanations and pseudocode.</p>
+          <ul>
+            <li>"Bubble sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Bubble_sort. Accessed 2 November 2019. </li>
+            <li>"Selection sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Selection_sort. Accessed 2 November 2019. </li>
+            <li>"Data Structure and Algorithms Selection Sort." <i>TutorialsPoint</i>, https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm. Accessed 2 November 2019. </li>
+            <li>"Insertion sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Insertion_sort. Accessed 2 November 2019. </li>
+            <li>"Odd-even sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort. Accessed 2 November 2019. </li>
+            <li>"Cocktail shaker sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Cocktail_shaker_sort. Accessed 2 November 2019. </li>
+            <li>"Quicksort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Quicksort. Accessed 2 November 2019. </li>
+            <li>"Heapsort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Heapsort. Accessed 2 November 2019. </li>
+            <li>"Merge sort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Merge_sort. Accessed 2 November 2019. </li>
+            <li>"Data Structures - Merge Sort Algorithm." <i>TutorialsPoint</i>, https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm. Accessed 2 November 2019. </li>
+            <li>"Introsort." <i>Wikipedia</i>, https://en.wikipedia.org/wiki/Introsort. Accessed 2 November 2019. </li>
+          </ul>
+        </div>
       </div>
     </div>
 
