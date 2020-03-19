@@ -19,7 +19,7 @@ p {
 .header-text-wrapper {
   max-width: 500px;
   text-align: left;
-  margin: 4rem auto;
+  margin: 4rem auto 0 auto;
 }
 
 .footer-text-wrapper {
