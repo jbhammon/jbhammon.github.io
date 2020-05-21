@@ -16,14 +16,22 @@
 }
 
 .thumbnail {
-  max-width: 100%;
-  height: auto;
   transition: translate 0.5s;
 }
 
 .thumbnail:hover {
   opacity: 0.6;
   translate: 0px -10px;
+}
+
+.thumbnail a {
+  text-decoration: none;
+  color: @copy;
+}
+
+.thumbnail-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .project-card-buffer {
